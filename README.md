@@ -8,7 +8,7 @@ Data engineering using cloud tools for turism data management
     - **Requerimientos**: Seleccionar APIs, herramientas de ingestión, orquestación, almacenamiento y visualización.
 
 2. **Selección de APIs**
-    - **Amadeus API**: Para datos de vuelos, hoteles y alquileres de vehículos.
+    - **Amadeus API**: Para datos de vuelos, hoteles y alquileres de vehículos. En este caso solo nos enfocamos en hoteles y alquileres
     - **Skyscanner API**: Para datos de vuelos.
     - **INE API**: Para estadísticas de turismo.
 
