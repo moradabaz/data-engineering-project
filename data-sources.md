@@ -5,5 +5,4 @@
 
 #### What kind of information do we need?
 
-Hola mundo, esto es una prueba
-
+1. We will to search for the spanish destiny airports (MAD, BCN, VLC, PMA, MAL, etc)
