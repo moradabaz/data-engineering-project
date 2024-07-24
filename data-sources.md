@@ -8,7 +8,8 @@
   - Descripcion: Información de posibles destinos junto con los vuelos mas baratos en una fecha especifica
   - Podemos elegir ida y vuelva o solo dia
 - Flight Cheapest Search -> https://developers.amadeus.com/self-service/category/flights/api-doc/flight-cheapest-date-search
-  - 
+
+Igual me interesa -> fechas, precio, tasas, informacion del avion
 
 ### Skyscanner API (Rapidapi)
 
