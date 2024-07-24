@@ -1,8 +1,14 @@
+## Posible comparativa de precios e informacion
 
-### Amadeus
+
+### Amadeus ¿Que nos ofrece la API de amadeus?
 
 - Flight Inspiration -> https://developers.amadeus.com/self-service/category/flights/api-doc/flight-inspiration-search/api-reference
-
+  - Frecuencia: Semanal
+  - Descripcion: Información de posibles destinos junto con los vuelos mas baratos en una fecha especifica
+  - Podemos elegir ida y vuelva o solo dia
+- Flight Cheapest Search -> https://developers.amadeus.com/self-service/category/flights/api-doc/flight-cheapest-date-search
+  - 
 
 ### Skyscanner API (Rapidapi)
 
