@@ -1,4 +1,4 @@
-## Posible comparativa de precios e informacion
+## Posible comparativa de precios e informacion de vuelos
 
 
 ### Amadeus ¿Que nos ofrece la API de amadeus?
