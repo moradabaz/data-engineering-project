@@ -4,6 +4,6 @@
 
 ### Crear una imagen de docker para airflow
 
-
-
 ### Desplegar con docker-compose la imagen
+
+### Crear un job de python que consiga obtener el json
