@@ -79,6 +79,7 @@ x-airflow-common:
     # - ${AIRFLOW_PROJ_DIR:-.}/config:/opt/airflow/config
     # - ${AIRFLOW_PROJ_DIR:-.}/plugins:/opt/airflow/plugins
     # - ${AIRFLOW_PROJ_DIR:-..}/calculadora/script:/opt/airflow/scripts:rw
+      - .env:/opt/airflow/.env:rw
       - ./dags:/opt/airflow/dags:rw
       - ./logs:/opt/airflow/logs:rw
       - ./plugins:/opt/airflow/plugins:rw

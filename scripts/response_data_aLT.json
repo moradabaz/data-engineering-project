@@ -1,0 +1,280 @@
+{
+    "data": [
+        {
+            "type": "flight-destination",
+            "origin": "MAD",
+            "destination": "OPO",
+            "departureDate": "2024-09-03",
+            "price": {
+                "total": "24.80"
+            },
+            "links": {
+                "flightDates": "https://test.api.amadeus.com/v1/shopping/flight-dates?origin=MAD&destination=OPO&departureDate=2024-07-30,2025-01-25&oneWay=true&nonStop=true&viewBy=DATE",
+                "flightOffers": "https://test.api.amadeus.com/v2/shopping/flight-offers?originLocationCode=MAD&destinationLocationCode=OPO&departureDate=2024-09-03&adults=1&nonStop=true"
+            }
+        },
+        {
+            "type": "flight-destination",
+            "origin": "MAD",
+            "destination": "FCO",
+            "departureDate": "2024-11-06",
+            "price": {
+                "total": "32.80"
+            },
+            "links": {
+                "flightDates": "https://test.api.amadeus.com/v1/shopping/flight-dates?origin=MAD&destination=FCO&departureDate=2024-07-30,2025-01-25&oneWay=true&nonStop=true&viewBy=DATE",
+                "flightOffers": "https://test.api.amadeus.com/v2/shopping/flight-offers?originLocationCode=MAD&destinationLocationCode=FCO&departureDate=2024-11-06&adults=1&nonStop=true"
+            }
+        },
+        {
+            "type": "flight-destination",
+            "origin": "MAD",
+            "destination": "RAK",
+            "departureDate": "2024-08-29",
+            "price": {
+                "total": "35.57"
+            },
+            "links": {
+                "flightDates": "https://test.api.amadeus.com/v1/shopping/flight-dates?origin=MAD&destination=RAK&departureDate=2024-07-30,2025-01-25&oneWay=true&nonStop=true&viewBy=DATE",
+                "flightOffers": "https://test.api.amadeus.com/v2/shopping/flight-offers?originLocationCode=MAD&destinationLocationCode=RAK&departureDate=2024-08-29&adults=1&nonStop=true"
+            }
+        },
+        {
+            "type": "flight-destination",
+            "origin": "MAD",
+            "destination": "PMI",
+            "departureDate": "2024-09-04",
+            "price": {
+                "total": "35.65"
+            },
+            "links": {
+                "flightDates": "https://test.api.amadeus.com/v1/shopping/flight-dates?origin=MAD&destination=PMI&departureDate=2024-07-30,2025-01-25&oneWay=true&nonStop=true&viewBy=DATE",
+                "flightOffers": "https://test.api.amadeus.com/v2/shopping/flight-offers?originLocationCode=MAD&destinationLocationCode=PMI&departureDate=2024-09-04&adults=1&nonStop=true"
+            }
+        },
+        {
+            "type": "flight-destination",
+            "origin": "MAD",
+            "destination": "LGW",
+            "departureDate": "2024-10-22",
+            "price": {
+                "total": "35.80"
+            },
+            "links": {
+                "flightDates": "https://test.api.amadeus.com/v1/shopping/flight-dates?origin=MAD&destination=LGW&departureDate=2024-07-30,2025-01-25&oneWay=true&nonStop=true&viewBy=DATE",
+                "flightOffers": "https://test.api.amadeus.com/v2/shopping/flight-offers?originLocationCode=MAD&destinationLocationCode=LGW&departureDate=2024-10-22&adults=1&nonStop=true"
+            }
+        },
+        {
+            "type": "flight-destination",
+            "origin": "MAD",
+            "destination": "AMS",
+            "departureDate": "2024-09-17",
+            "price": {
+                "total": "38.80"
+            },
+            "links": {
+                "flightDates": "https://test.api.amadeus.com/v1/shopping/flight-dates?origin=MAD&destination=AMS&departureDate=2024-07-30,2025-01-25&oneWay=true&nonStop=true&viewBy=DATE",
+                "flightOffers": "https://test.api.amadeus.com/v2/shopping/flight-offers?originLocationCode=MAD&destinationLocationCode=AMS&departureDate=2024-09-17&adults=1&nonStop=true"
+            }
+        },
+        {
+            "type": "flight-destination",
+            "origin": "MAD",
+            "destination": "LIS",
+            "departureDate": "2024-08-14",
+            "price": {
+                "total": "40.80"
+            },
+            "links": {
+                "flightDates": "https://test.api.amadeus.com/v1/shopping/flight-dates?origin=MAD&destination=LIS&departureDate=2024-07-30,2025-01-25&oneWay=true&nonStop=true&viewBy=DATE",
+                "flightOffers": "https://test.api.amadeus.com/v2/shopping/flight-offers?originLocationCode=MAD&destinationLocationCode=LIS&departureDate=2024-08-14&adults=1&nonStop=true"
+            }
+        },
+        {
+            "type": "flight-destination",
+            "origin": "MAD",
+            "destination": "LPA",
+            "departureDate": "2024-08-23",
+            "price": {
+                "total": "40.80"
+            },
+            "links": {
+                "flightDates": "https://test.api.amadeus.com/v1/shopping/flight-dates?origin=MAD&destination=LPA&departureDate=2024-07-30,2025-01-25&oneWay=true&nonStop=true&viewBy=DATE",
+                "flightOffers": "https://test.api.amadeus.com/v2/shopping/flight-offers?originLocationCode=MAD&destinationLocationCode=LPA&departureDate=2024-08-23&adults=1&nonStop=true"
+            }
+        },
+        {
+            "type": "flight-destination",
+            "origin": "MAD",
+            "destination": "ORY",
+            "departureDate": "2024-08-07",
+            "price": {
+                "total": "49.80"
+            },
+            "links": {
+                "flightDates": "https://test.api.amadeus.com/v1/shopping/flight-dates?origin=MAD&destination=ORY&departureDate=2024-07-30,2025-01-25&oneWay=true&nonStop=true&viewBy=DATE",
+                "flightOffers": "https://test.api.amadeus.com/v2/shopping/flight-offers?originLocationCode=MAD&destinationLocationCode=ORY&departureDate=2024-08-07&adults=1&nonStop=true"
+            }
+        },
+        {
+            "type": "flight-destination",
+            "origin": "MAD",
+            "destination": "MXP",
+            "departureDate": "2024-09-17",
+            "price": {
+                "total": "55.80"
+            },
+            "links": {
+                "flightDates": "https://test.api.amadeus.com/v1/shopping/flight-dates?origin=MAD&destination=MXP&departureDate=2024-07-30,2025-01-25&oneWay=true&nonStop=true&viewBy=DATE",
+                "flightOffers": "https://test.api.amadeus.com/v2/shopping/flight-offers?originLocationCode=MAD&destinationLocationCode=MXP&departureDate=2024-09-17&adults=1&nonStop=true"
+            }
+        },
+        {
+            "type": "flight-destination",
+            "origin": "MAD",
+            "destination": "CUN",
+            "departureDate": "2024-09-05",
+            "price": {
+                "total": "276.14"
+            },
+            "links": {
+                "flightDates": "https://test.api.amadeus.com/v1/shopping/flight-dates?origin=MAD&destination=CUN&departureDate=2024-07-30,2025-01-25&oneWay=true&nonStop=true&viewBy=DATE",
+                "flightOffers": "https://test.api.amadeus.com/v2/shopping/flight-offers?originLocationCode=MAD&destinationLocationCode=CUN&departureDate=2024-09-05&adults=1&nonStop=true"
+            }
+        },
+        {
+            "type": "flight-destination",
+            "origin": "MAD",
+            "destination": "JFK",
+            "departureDate": "2024-09-10",
+            "price": {
+                "total": "371.40"
+            },
+            "links": {
+                "flightDates": "https://test.api.amadeus.com/v1/shopping/flight-dates?origin=MAD&destination=JFK&departureDate=2024-07-30,2025-01-25&oneWay=true&nonStop=true&viewBy=DATE",
+                "flightOffers": "https://test.api.amadeus.com/v2/shopping/flight-offers?originLocationCode=MAD&destinationLocationCode=JFK&departureDate=2024-09-10&adults=1&nonStop=true"
+            }
+        },
+        {
+            "type": "flight-destination",
+            "origin": "MAD",
+            "destination": "MIA",
+            "departureDate": "2024-11-13",
+            "price": {
+                "total": "393.21"
+            },
+            "links": {
+                "flightDates": "https://test.api.amadeus.com/v1/shopping/flight-dates?origin=MAD&destination=MIA&departureDate=2024-07-30,2025-01-25&oneWay=true&nonStop=true&viewBy=DATE",
+                "flightOffers": "https://test.api.amadeus.com/v2/shopping/flight-offers?originLocationCode=MAD&destinationLocationCode=MIA&departureDate=2024-11-13&adults=1&nonStop=true"
+            }
+        },
+        {
+            "type": "flight-destination",
+            "origin": "MAD",
+            "destination": "BKK",
+            "departureDate": "2024-08-29",
+            "price": {
+                "total": "487.85"
+            },
+            "links": {
+                "flightDates": "https://test.api.amadeus.com/v1/shopping/flight-dates?origin=MAD&destination=BKK&departureDate=2024-07-30,2025-01-25&oneWay=true&nonStop=true&viewBy=DATE",
+                "flightOffers": "https://test.api.amadeus.com/v2/shopping/flight-offers?originLocationCode=MAD&destinationLocationCode=BKK&departureDate=2024-08-29&adults=1&nonStop=true"
+            }
+        },
+        {
+            "type": "flight-destination",
+            "origin": "MAD",
+            "destination": "LAX",
+            "departureDate": "2025-01-15",
+            "price": {
+                "total": "728.98"
+            },
+            "links": {
+                "flightDates": "https://test.api.amadeus.com/v1/shopping/flight-dates?origin=MAD&destination=LAX&departureDate=2024-07-30,2025-01-25&oneWay=true&nonStop=true&viewBy=DATE",
+                "flightOffers": "https://test.api.amadeus.com/v2/shopping/flight-offers?originLocationCode=MAD&destinationLocationCode=LAX&departureDate=2025-01-15&adults=1&nonStop=true"
+            }
+        }
+    ],
+    "dictionaries": {
+        "currencies": {
+            "EUR": "EURO"
+        },
+        "locations": {
+            "LAX": {
+                "subType": "AIRPORT",
+                "detailedName": "LOS ANGELES INTL"
+            },
+            "BKK": {
+                "subType": "AIRPORT",
+                "detailedName": "SUVARNABHUMI INTL"
+            },
+            "MIA": {
+                "subType": "AIRPORT",
+                "detailedName": "MIAMI INTL"
+            },
+            "MXP": {
+                "subType": "AIRPORT",
+                "detailedName": "MALPENSA"
+            },
+            "AMS": {
+                "subType": "AIRPORT",
+                "detailedName": "SCHIPHOL AIRPORT"
+            },
+            "PMI": {
+                "subType": "AIRPORT",
+                "detailedName": "PALMA DE MALLORCA"
+            },
+            "JFK": {
+                "subType": "AIRPORT",
+                "detailedName": "JOHN F KENNEDY INTL"
+            },
+            "OPO": {
+                "subType": "AIRPORT",
+                "detailedName": "FRANCISCO SA CARNEIRO"
+            },
+            "MAD": {
+                "subType": "AIRPORT",
+                "detailedName": "ADOLFO SUAREZ BARAJAS"
+            },
+            "FCO": {
+                "subType": "AIRPORT",
+                "detailedName": "FIUMICINO"
+            },
+            "ORY": {
+                "subType": "AIRPORT",
+                "detailedName": "ORLY"
+            },
+            "LIS": {
+                "subType": "AIRPORT",
+                "detailedName": "AIRPORT"
+            },
+            "LPA": {
+                "subType": "AIRPORT",
+                "detailedName": "GRAN CANARIA"
+            },
+            "LGW": {
+                "subType": "AIRPORT",
+                "detailedName": "GATWICK"
+            },
+            "CUN": {
+                "subType": "AIRPORT",
+                "detailedName": "INTERNATIONAL"
+            },
+            "RAK": {
+                "subType": "AIRPORT",
+                "detailedName": "MENARA"
+            }
+        }
+    },
+    "meta": {
+        "currency": "EUR",
+        "links": {
+            "self": "https://test.api.amadeus.com/v1/shopping/flight-destinations?origin=MAD&departureDate=2024-07-30,2025-01-25&oneWay=true&nonStop=true&viewBy=DESTINATION"
+        },
+        "defaults": {
+            "departureDate": "2024-07-30,2025-01-25",
+            "viewBy": "DESTINATION"
+        }
+    }
+}
