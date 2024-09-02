@@ -1638,3 +1638,696 @@ Nos interesa el vuelo de Madrid-Marrakech el dia 19-09-2024
     "message": "Successful"
 }
 ```
+
+---
+
+### Stage 2 -> Ingest Raw aditional Info
+
+Informacion adicional para vuelos utilizando **Amadeus**
+
+```
+https://test.api.amadeus.com/v2/shopping/flight-offers?originLocationCode=MAD&destinationLocationCode=LIS&departureDate=2024-09-01&adults=1&nonStop=true
+```
+
+Informacion adicional para vuelos utilizando **Skyscanner**
+
+Request 
+
+```
+GET https://sky-scanner3.p.rapidapi.com/flights/search-one-way?fromEntityId=MAD&toEntityId=LIS&departDate=2024-08-27&stops=direct HTTP/1.1
+Accept: application/json
+Content-Type: application/json
+x-rapidapi-ua: RapidAPI-Playground
+x-rapidapi-key: 8a084f1aebmsh4e2a4756ff071d4p12ff6bjsn62affbba6a02
+x-rapidapi-host: sky-scanner3.p.rapidapi.com
+specificMethodHeaders: [object Object]
+```
+
+Response
+
+```
+{
+  "data": {
+    "context": {
+      "status": "incomplete",
+      "sessionId": "ClQIARJQCk4KJDIzZTJhMjE5LTJkOGEtNGRmYy05ZjhhLTIxMzM4NzUxYjA5ZBACGiQ0Y2Y3ZWRkMi0xMDMyLTQ2NTEtYjJmNC01YWZjZTc0MDI5ODQSKHVzc19kNjdlOWMzYS01YmFlLTQzODctOTcxMC01NjkwMWJiMmNmMzg=",
+      "totalResults": 7,
+      "filterTotalResults": 5
+    },
+    "itineraries": [
+      {
+        "id": "13870-2408272215--31781-0-13577-2408272235",
+        "price": {
+          "raw": 59.2,
+          "formatted": "$60",
+          "pricingOptionId": "M-4EOkLwX1c8"
+        },
+        "legs": [
+          {
+            "id": "13870-2408272215--31781-0-13577-2408272235",
+            "origin": {
+              "id": "MAD",
+              "entityId": "95565077",
+              "name": "Madrid",
+              "displayCode": "MAD",
+              "city": "Madrid",
+              "country": "Spain",
+              "isHighlighted": false
+            },
+            "destination": {
+              "id": "LIS",
+              "entityId": "95565055",
+              "name": "Lisbon",
+              "displayCode": "LIS",
+              "city": "Lisbon",
+              "country": "Portugal",
+              "isHighlighted": false
+            },
+            "durationInMinutes": 80,
+            "stopCount": 0,
+            "isSmallestStops": false,
+            "departure": "2024-08-27T22:15:00",
+            "arrival": "2024-08-27T22:35:00",
+            "timeDeltaInDays": 0,
+            "carriers": {
+              "marketing": [
+                {
+                  "id": -31781,
+                  "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/TP.png",
+                  "name": "TAP Air Portugal"
+                }
+              ],
+              "operationType": "fully_operated"
+            },
+            "segments": [
+              {
+                "id": "13870-13577-2408272215-2408272235--31781",
+                "origin": {
+                  "flightPlaceId": "MAD",
+                  "displayCode": "MAD",
+                  "parent": {
+                    "flightPlaceId": "MADR",
+                    "displayCode": "MAD",
+                    "name": "Madrid",
+                    "type": "City"
+                  },
+                  "name": "Madrid",
+                  "type": "Airport",
+                  "country": "Spain"
+                },
+                "destination": {
+                  "flightPlaceId": "LIS",
+                  "displayCode": "LIS",
+                  "parent": {
+                    "flightPlaceId": "LISB",
+                    "displayCode": "LIS",
+                    "name": "Lisbon",
+                    "type": "City"
+                  },
+                  "name": "Lisbon",
+                  "type": "Airport",
+                  "country": "Portugal"
+                },
+                "departure": "2024-08-27T22:15:00",
+                "arrival": "2024-08-27T22:35:00",
+                "durationInMinutes": 80,
+                "flightNumber": "1021",
+                "marketingCarrier": {
+                  "id": -31781,
+                  "name": "TAP Air Portugal",
+                  "alternateId": "TP",
+                  "allianceId": 0,
+                  "displayCode": ""
+                },
+                "operatingCarrier": {
+                  "id": -31781,
+                  "name": "TAP Air Portugal",
+                  "alternateId": "TP",
+                  "allianceId": 0,
+                  "displayCode": ""
+                }
+              }
+            ]
+          }
+        ],
+        "isSelfTransfer": false,
+        "isProtectedSelfTransfer": false,
+        "farePolicy": {
+          "isChangeAllowed": false,
+          "isPartiallyChangeable": false,
+          "isCancellationAllowed": false,
+          "isPartiallyRefundable": false
+        },
+        "fareAttributes": {},
+        "tags": [
+          "cheapest",
+          "shortest"
+        ],
+        "isMashUp": false,
+        "hasFlexibleOptions": false,
+        "score": 0.999
+      },
+      {
+        "id": "13870-2408272300--32222-0-13577-2408272325",
+        "price": {
+          "raw": 59.97,
+          "formatted": "$60",
+          "pricingOptionId": "ZyAfvnzzUGOA"
+        },
+        "legs": [
+          {
+            "id": "13870-2408272300--32222-0-13577-2408272325",
+            "origin": {
+              "id": "MAD",
+              "entityId": "95565077",
+              "name": "Madrid",
+              "displayCode": "MAD",
+              "city": "Madrid",
+              "country": "Spain",
+              "isHighlighted": false
+            },
+            "destination": {
+              "id": "LIS",
+              "entityId": "95565055",
+              "name": "Lisbon",
+              "displayCode": "LIS",
+              "city": "Lisbon",
+              "country": "Portugal",
+              "isHighlighted": false
+            },
+            "durationInMinutes": 85,
+            "stopCount": 0,
+            "isSmallestStops": false,
+            "departure": "2024-08-27T23:00:00",
+            "arrival": "2024-08-27T23:25:00",
+            "timeDeltaInDays": 0,
+            "carriers": {
+              "marketing": [
+                {
+                  "id": -32222,
+                  "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/IB.png",
+                  "name": "Iberia"
+                }
+              ],
+              "operationType": "fully_operated"
+            },
+            "segments": [
+              {
+                "id": "13870-13577-2408272300-2408272325--32222",
+                "origin": {
+                  "flightPlaceId": "MAD",
+                  "displayCode": "MAD",
+                  "parent": {
+                    "flightPlaceId": "MADR",
+                    "displayCode": "MAD",
+                    "name": "Madrid",
+                    "type": "City"
+                  },
+                  "name": "Madrid",
+                  "type": "Airport",
+                  "country": "Spain"
+                },
+                "destination": {
+                  "flightPlaceId": "LIS",
+                  "displayCode": "LIS",
+                  "parent": {
+                    "flightPlaceId": "LISB",
+                    "displayCode": "LIS",
+                    "name": "Lisbon",
+                    "type": "City"
+                  },
+                  "name": "Lisbon",
+                  "type": "Airport",
+                  "country": "Portugal"
+                },
+                "departure": "2024-08-27T23:00:00",
+                "arrival": "2024-08-27T23:25:00",
+                "durationInMinutes": 85,
+                "flightNumber": "3118",
+                "marketingCarrier": {
+                  "id": -32222,
+                  "name": "Iberia",
+                  "alternateId": "IB",
+                  "allianceId": 0,
+                  "displayCode": ""
+                },
+                "operatingCarrier": {
+                  "id": -32222,
+                  "name": "Iberia",
+                  "alternateId": "IB",
+                  "allianceId": 0,
+                  "displayCode": ""
+                }
+              }
+            ]
+          }
+        ],
+        "isSelfTransfer": false,
+        "isProtectedSelfTransfer": false,
+        "farePolicy": {
+          "isChangeAllowed": false,
+          "isPartiallyChangeable": false,
+          "isCancellationAllowed": false,
+          "isPartiallyRefundable": false
+        },
+        "fareAttributes": {},
+        "tags": [
+          "second_cheapest",
+          "second_shortest"
+        ],
+        "isMashUp": false,
+        "hasFlexibleOptions": false,
+        "score": 0.713592
+      },
+      {
+        "id": "13870-2408272310--32356-0-13577-2408272335",
+        "price": {
+          "raw": 109.43,
+          "formatted": "$110",
+          "pricingOptionId": "tBWUqWYHcXjj"
+        },
+        "legs": [
+          {
+            "id": "13870-2408272310--32356-0-13577-2408272335",
+            "origin": {
+              "id": "MAD",
+              "entityId": "95565077",
+              "name": "Madrid",
+              "displayCode": "MAD",
+              "city": "Madrid",
+              "country": "Spain",
+              "isHighlighted": false
+            },
+            "destination": {
+              "id": "LIS",
+              "entityId": "95565055",
+              "name": "Lisbon",
+              "displayCode": "LIS",
+              "city": "Lisbon",
+              "country": "Portugal",
+              "isHighlighted": false
+            },
+            "durationInMinutes": 85,
+            "stopCount": 0,
+            "isSmallestStops": false,
+            "departure": "2024-08-27T23:10:00",
+            "arrival": "2024-08-27T23:35:00",
+            "timeDeltaInDays": 0,
+            "carriers": {
+              "marketing": [
+                {
+                  "id": -32356,
+                  "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/EZ.png",
+                  "name": "easyJet"
+                }
+              ],
+              "operationType": "fully_operated"
+            },
+            "segments": [
+              {
+                "id": "13870-13577-2408272310-2408272335--32356",
+                "origin": {
+                  "flightPlaceId": "MAD",
+                  "displayCode": "MAD",
+                  "parent": {
+                    "flightPlaceId": "MADR",
+                    "displayCode": "MAD",
+                    "name": "Madrid",
+                    "type": "City"
+                  },
+                  "name": "Madrid",
+                  "type": "Airport",
+                  "country": "Spain"
+                },
+                "destination": {
+                  "flightPlaceId": "LIS",
+                  "displayCode": "LIS",
+                  "parent": {
+                    "flightPlaceId": "LISB",
+                    "displayCode": "LIS",
+                    "name": "Lisbon",
+                    "type": "City"
+                  },
+                  "name": "Lisbon",
+                  "type": "Airport",
+                  "country": "Portugal"
+                },
+                "departure": "2024-08-27T23:10:00",
+                "arrival": "2024-08-27T23:35:00",
+                "durationInMinutes": 85,
+                "flightNumber": "6724",
+                "marketingCarrier": {
+                  "id": -32356,
+                  "name": "easyJet",
+                  "alternateId": "EZ",
+                  "allianceId": 0,
+                  "displayCode": ""
+                },
+                "operatingCarrier": {
+                  "id": -32356,
+                  "name": "easyJet",
+                  "alternateId": "EZ",
+                  "allianceId": 0,
+                  "displayCode": ""
+                }
+              }
+            ]
+          }
+        ],
+        "isSelfTransfer": false,
+        "isProtectedSelfTransfer": false,
+        "farePolicy": {
+          "isChangeAllowed": false,
+          "isPartiallyChangeable": false,
+          "isCancellationAllowed": false,
+          "isPartiallyRefundable": false
+        },
+        "fareAttributes": {},
+        "tags": [
+          "third_cheapest",
+          "third_shortest"
+        ],
+        "isMashUp": false,
+        "hasFlexibleOptions": false,
+        "score": 0.466231
+      },
+      {
+        "id": "13870-2408272300--31685-0-13577-2408272325",
+        "price": {
+          "raw": 121.36,
+          "formatted": "$122",
+          "pricingOptionId": "KkolRd5f-uB0"
+        },
+        "legs": [
+          {
+            "id": "13870-2408272300--31685-0-13577-2408272325",
+            "origin": {
+              "id": "MAD",
+              "entityId": "95565077",
+              "name": "Madrid",
+              "displayCode": "MAD",
+              "city": "Madrid",
+              "country": "Spain",
+              "isHighlighted": false
+            },
+            "destination": {
+              "id": "LIS",
+              "entityId": "95565055",
+              "name": "Lisbon",
+              "displayCode": "LIS",
+              "city": "Lisbon",
+              "country": "Portugal",
+              "isHighlighted": false
+            },
+            "durationInMinutes": 85,
+            "stopCount": 0,
+            "isSmallestStops": false,
+            "departure": "2024-08-27T23:00:00",
+            "arrival": "2024-08-27T23:25:00",
+            "timeDeltaInDays": 0,
+            "carriers": {
+              "marketing": [
+                {
+                  "id": -31685,
+                  "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/07.png",
+                  "name": "Vueling Airlines"
+                }
+              ],
+              "operating": [
+                {
+                  "id": -32222,
+                  "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/IB.png",
+                  "name": "Iberia"
+                }
+              ],
+              "operationType": "not_operated"
+            },
+            "segments": [
+              {
+                "id": "13870-13577-2408272300-2408272325--31685",
+                "origin": {
+                  "flightPlaceId": "MAD",
+                  "displayCode": "MAD",
+                  "parent": {
+                    "flightPlaceId": "MADR",
+                    "displayCode": "MAD",
+                    "name": "Madrid",
+                    "type": "City"
+                  },
+                  "name": "Madrid",
+                  "type": "Airport",
+                  "country": "Spain"
+                },
+                "destination": {
+                  "flightPlaceId": "LIS",
+                  "displayCode": "LIS",
+                  "parent": {
+                    "flightPlaceId": "LISB",
+                    "displayCode": "LIS",
+                    "name": "Lisbon",
+                    "type": "City"
+                  },
+                  "name": "Lisbon",
+                  "type": "Airport",
+                  "country": "Portugal"
+                },
+                "departure": "2024-08-27T23:00:00",
+                "arrival": "2024-08-27T23:25:00",
+                "durationInMinutes": 85,
+                "flightNumber": "5219",
+                "marketingCarrier": {
+                  "id": -31685,
+                  "name": "Vueling Airlines",
+                  "alternateId": "07",
+                  "allianceId": 0,
+                  "displayCode": ""
+                },
+                "operatingCarrier": {
+                  "id": -32222,
+                  "name": "Iberia",
+                  "alternateId": "IB",
+                  "allianceId": 0,
+                  "displayCode": ""
+                }
+              }
+            ]
+          }
+        ],
+        "isSelfTransfer": false,
+        "isProtectedSelfTransfer": false,
+        "farePolicy": {
+          "isChangeAllowed": false,
+          "isPartiallyChangeable": false,
+          "isCancellationAllowed": false,
+          "isPartiallyRefundable": false
+        },
+        "fareAttributes": {},
+        "isMashUp": false,
+        "hasFlexibleOptions": false,
+        "score": 0.280738
+      },
+      {
+        "id": "13870-2408272300--31795-0-13577-2408272325",
+        "price": {
+          "raw": 549.39,
+          "formatted": "$550",
+          "pricingOptionId": "KNSoCuRgPIoP"
+        },
+        "legs": [
+          {
+            "id": "13870-2408272300--31795-0-13577-2408272325",
+            "origin": {
+              "id": "MAD",
+              "entityId": "95565077",
+              "name": "Madrid",
+              "displayCode": "MAD",
+              "city": "Madrid",
+              "country": "Spain",
+              "isHighlighted": false
+            },
+            "destination": {
+              "id": "LIS",
+              "entityId": "95565055",
+              "name": "Lisbon",
+              "displayCode": "LIS",
+              "city": "Lisbon",
+              "country": "Portugal",
+              "isHighlighted": false
+            },
+            "durationInMinutes": 85,
+            "stopCount": 0,
+            "isSmallestStops": false,
+            "departure": "2024-08-27T23:00:00",
+            "arrival": "2024-08-27T23:25:00",
+            "timeDeltaInDays": 0,
+            "carriers": {
+              "marketing": [
+                {
+                  "id": -31795,
+                  "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/DT.png",
+                  "name": "TAAG Angola Airlines"
+                }
+              ],
+              "operating": [
+                {
+                  "id": -32222,
+                  "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/IB.png",
+                  "name": "Iberia"
+                }
+              ],
+              "operationType": "not_operated"
+            },
+            "segments": [
+              {
+                "id": "13870-13577-2408272300-2408272325--31795",
+                "origin": {
+                  "flightPlaceId": "MAD",
+                  "displayCode": "MAD",
+                  "parent": {
+                    "flightPlaceId": "MADR",
+                    "displayCode": "MAD",
+                    "name": "Madrid",
+                    "type": "City"
+                  },
+                  "name": "Madrid",
+                  "type": "Airport",
+                  "country": "Spain"
+                },
+                "destination": {
+                  "flightPlaceId": "LIS",
+                  "displayCode": "LIS",
+                  "parent": {
+                    "flightPlaceId": "LISB",
+                    "displayCode": "LIS",
+                    "name": "Lisbon",
+                    "type": "City"
+                  },
+                  "name": "Lisbon",
+                  "type": "Airport",
+                  "country": "Portugal"
+                },
+                "departure": "2024-08-27T23:00:00",
+                "arrival": "2024-08-27T23:25:00",
+                "durationInMinutes": 85,
+                "flightNumber": "3118",
+                "marketingCarrier": {
+                  "id": -31795,
+                  "name": "TAAG Angola Airlines",
+                  "alternateId": "DT",
+                  "allianceId": 0,
+                  "displayCode": ""
+                },
+                "operatingCarrier": {
+                  "id": -32222,
+                  "name": "Iberia",
+                  "alternateId": "IB",
+                  "allianceId": 0,
+                  "displayCode": ""
+                }
+              }
+            ]
+          }
+        ],
+        "isSelfTransfer": false,
+        "isProtectedSelfTransfer": false,
+        "farePolicy": {
+          "isChangeAllowed": false,
+          "isPartiallyChangeable": false,
+          "isCancellationAllowed": false,
+          "isPartiallyRefundable": false
+        },
+        "fareAttributes": {},
+        "isMashUp": false,
+        "hasFlexibleOptions": false,
+        "score": 0.186891
+      }
+    ],
+    "messages": [],
+    "filterStats": {
+      "duration": {
+        "min": 80,
+        "max": 1355,
+        "multiCityMin": 80,
+        "multiCityMax": 1355
+      },
+      "airports": [
+        {
+          "city": "Lisbon",
+          "airports": [
+            {
+              "id": "LIS",
+              "entityId": "95565055",
+              "name": "Lisbon"
+            }
+          ]
+        },
+        {
+          "city": "Madrid",
+          "airports": [
+            {
+              "id": "MAD",
+              "entityId": "95565077",
+              "name": "Madrid"
+            }
+          ]
+        }
+      ],
+      "carriers": [
+        {
+          "id": -32356,
+          "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/EZ.png",
+          "name": "easyJet"
+        },
+        {
+          "id": -32348,
+          "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/EK.png",
+          "name": "Emirates"
+        },
+        {
+          "id": -32222,
+          "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/IB.png",
+          "name": "Iberia"
+        },
+        {
+          "id": -31939,
+          "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/QR.png",
+          "name": "Qatar Airways"
+        },
+        {
+          "id": -31795,
+          "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/DT.png",
+          "name": "TAAG Angola Airlines"
+        },
+        {
+          "id": -31781,
+          "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/TP.png",
+          "name": "TAP Air Portugal"
+        },
+        {
+          "id": -31685,
+          "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/07.png",
+          "name": "Vueling Airlines"
+        }
+      ],
+      "stopPrices": {
+        "direct": {
+          "isPresent": true,
+          "formattedPrice": "$60"
+        },
+        "one": {
+          "isPresent": true,
+          "formattedPrice": "$1,406"
+        },
+        "twoOrMore": {
+          "isPresent": false
+        }
+      }
+    },
+    "flightsSessionId": "23e2a219-2d8a-4dfc-9f8a-21338751b09d",
+    "destinationImageUrl": "https://content.skyscnr.com/m/3719e8f4a5daf43d/original/Flights-Placeholder.jpg",
+    "token": "eyJhIjoxLCJjIjowLCJpIjowLCJjYyI6ImVjb25vbXkiLCJvIjoiTUFEIiwiZCI6IkxJUyIsImQxIjoiMjAyNC0wOC0yNyJ9"
+  },
+  "status": true,
+  "message": "Successful"
+}
+```
