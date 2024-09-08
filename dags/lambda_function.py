@@ -1,6 +1,8 @@
 from airflow import DAG
 from airflow.providers.amazon.aws.operators.lambda_function import LambdaInvokeFunctionOperator
+from airflow.providers.amazon.aws.sensors.lambda_function import LambdaFunctionStateSensor
 from airflow.operators.python import PythonOperator
+from airflow.providers.amazon.aws.hooks.s3 import S3Hook
 from datetime import datetime, timedelta
 from dotenv import find_dotenv, load_dotenv, set_key
 import os
@@ -64,13 +66,38 @@ def create_payload(**kwargs):
         "start_of_week": start_of_week,
         "end_of_week": end_of_week,
         "week": week,
+        "year": year
+    }
+    # return payload
+    payload_json = json.dumps(payload)
+    print(f"Payload JSON: {payload_json}")
+    return payload_json
+
+def create_addition_info_payload(**kwargs):
+    execution_date = kwargs['execution_date']
+    year, week = calculate_partition_date(execution_date=execution_date)
+    start_of_week, end_of_week = calculate_week_dates(execution_date)
+    task_instance = kwargs['ti']
+    response  = task_instance.xcom_pull(task_ids='invoke_lambda_with_payload')
+    response = json.loads(response)
+    response = json.loads(response['body'])
+    print(response['message'])
+
+    data = response['data']
+    
+    additional_info_payload = {
+        "token": os.environ['API_TOKEN'],
+        "data": data['data'],
+        "start_of_week": start_of_week,
+        "end_of_week": end_of_week,
+        "week": week,
         'year': year
     }
 
-    return payload
-    # return json.dumps(payload).encode('utf-8')
-
-
+    payload_json = json.dumps(additional_info_payload)
+    print(f"Payload JSON: {payload_json}")
+    return payload_json
+    
 def invoke_lambda_with_payload(**kwargs):
     task_instance = kwargs['ti']
     payload = task_instance.xcom_pull(task_ids='build_payload')
@@ -89,6 +116,7 @@ def invoke_lambda_with_payload(**kwargs):
     )
     
     lambda_operator.execute(kwargs)
+
 
 with DAG(dag_id='lambda_example_dag', default_args=default_args, schedule_interval=None, max_active_runs=1) as dag:
     
@@ -114,25 +142,38 @@ with DAG(dag_id='lambda_example_dag', default_args=default_args, schedule_interv
     build_payload_task = PythonOperator(
     task_id='build_payload',
     python_callable=create_payload,
-    provide_context=True,
     dag=dag,
 )
-
     
-    # invoke_lambda = LambdaInvokeFunctionOperator(
-    #     task_id='invoke_lambda',
-    #     function_name='my-first-lambda',  # Reemplaza con el nombre de tu Lambda
-    #     payload='{{ task_instance.xcom_pull(task_ids="build_payload") }}',
-    #     log_type='Tail',
-    #     aws_conn_id='aws_default',  # Configura tu conexión a AWS en Airflow
-    #     region_name='eu-south-2'
-    # )
-
-    invoke_lambda_task = PythonOperator(
+    invoke_lambda_task = LambdaInvokeFunctionOperator(
         task_id='invoke_lambda_with_payload',
-        python_callable=invoke_lambda_with_payload,
-        provide_context=True,
+        function_name='my-first-lambda',
+        payload="{{ task_instance.xcom_pull(task_ids='build_payload') }}",  # Usar XCom para obtener el payload
+        aws_conn_id='aws_default',
+        region_name='eu-south-2',
+        dag=dag
+)
+
+    build_additional_info_payload_task = PythonOperator(
+    task_id='create_addition_info_payload',
+    python_callable=create_addition_info_payload,
+    dag=dag,
+)
+    
+    fetch_amadeus_info_task = LambdaInvokeFunctionOperator(
+        task_id='fetch_amadeus_info_task',
+        function_name='raw-add-amadeus-info',
+        payload="{{ task_instance.xcom_pull(task_ids='create_addition_info_payload') }}",  # Usar XCom para obtener el payload
+        aws_conn_id='aws_default',
+        region_name='eu-south-2',
         dag=dag
     )
+    
+#     invoke_amadeus_lambda_task = PythonOperator(
+#         task_id='invoke_addional_amadeus_info',
+#         python_callable=invoke_addional_amadeus_info,
+#         provide_context=True,
+#         dag=dag
+#     )
 
-    generate_token_task >> save_token_task >> build_payload_task >> invoke_lambda_task
+    generate_token_task >> save_token_task >> build_payload_task >> invoke_lambda_task >> build_additional_info_payload_task >> fetch_amadeus_info_task

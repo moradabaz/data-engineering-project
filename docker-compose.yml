@@ -87,6 +87,8 @@ x-airflow-common:
       - ./plugins:/opt/airflow/plugins:rw
       - ./scripts:/opt/airflow/scripts:rw
       - ./data:/opt/airflow/data:rw
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
   user: "${AIRFLOW_UID:-50000}:0"
   depends_on:
     &airflow-common-depends-on
