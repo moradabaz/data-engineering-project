@@ -1,0 +1,1605 @@
+{
+    "meta": {
+        "count": 12,
+        "links": {
+            "self": "https://test.api.amadeus.com/v2/shopping/flight-offers?originLocationCode=MAD&destinationLocationCode=AMS&departureDate=2024-09-11&adults=1&nonStop=true"
+        }
+    },
+    "data": [
+        {
+            "type": "flight-offer",
+            "id": "1",
+            "source": "GDS",
+            "instantTicketingRequired": false,
+            "nonHomogeneous": false,
+            "oneWay": false,
+            "isUpsellOffer": false,
+            "lastTicketingDate": "2024-09-09",
+            "lastTicketingDateTime": "2024-09-09",
+            "numberOfBookableSeats": 9,
+            "itineraries": [
+                {
+                    "duration": "PT2H35M",
+                    "segments": [
+                        {
+                            "departure": {
+                                "iataCode": "MAD",
+                                "terminal": "2",
+                                "at": "2024-09-11T07:05:00"
+                            },
+                            "arrival": {
+                                "iataCode": "AMS",
+                                "at": "2024-09-11T09:40:00"
+                            },
+                            "carrierCode": "UX",
+                            "number": "1091",
+                            "aircraft": {
+                                "code": "789"
+                            },
+                            "operating": {
+                                "carrierCode": "UX"
+                            },
+                            "duration": "PT2H35M",
+                            "id": "3",
+                            "numberOfStops": 0,
+                            "blacklistedInEU": false
+                        }
+                    ]
+                }
+            ],
+            "price": {
+                "currency": "EUR",
+                "total": "62.80",
+                "base": "44.00",
+                "fees": [
+                    {
+                        "amount": "0.00",
+                        "type": "SUPPLIER"
+                    },
+                    {
+                        "amount": "0.00",
+                        "type": "TICKETING"
+                    }
+                ],
+                "grandTotal": "62.80",
+                "additionalServices": [
+                    {
+                        "amount": "40.00",
+                        "type": "CHECKED_BAGS"
+                    }
+                ]
+            },
+            "pricingOptions": {
+                "fareType": [
+                    "PUBLISHED"
+                ],
+                "includedCheckedBagsOnly": false
+            },
+            "validatingAirlineCodes": [
+                "UX"
+            ],
+            "travelerPricings": [
+                {
+                    "travelerId": "1",
+                    "fareOption": "STANDARD",
+                    "travelerType": "ADULT",
+                    "price": {
+                        "currency": "EUR",
+                        "total": "62.80",
+                        "base": "44.00"
+                    },
+                    "fareDetailsBySegment": [
+                        {
+                            "segmentId": "3",
+                            "cabin": "ECONOMY",
+                            "fareBasis": "AYYO5L",
+                            "brandedFare": "LITE",
+                            "brandedFareLabel": "LITE",
+                            "class": "A",
+                            "includedCheckedBags": {
+                                "quantity": 0
+                            },
+                            "amenities": [
+                                {
+                                    "description": "FIRST PREPAID BAG",
+                                    "isChargeable": true,
+                                    "amenityType": "BAGGAGE",
+                                    "amenityProvider": {
+                                        "name": "BrandedFare"
+                                    }
+                                },
+                                {
+                                    "description": "PREPAID BAG",
+                                    "isChargeable": true,
+                                    "amenityType": "BAGGAGE",
+                                    "amenityProvider": {
+                                        "name": "BrandedFare"
+                                    }
+                                },
+                                {
+                                    "description": "CARRY ON HAND BAGGAGE",
+                                    "isChargeable": false,
+                                    "amenityType": "BAGGAGE",
+                                    "amenityProvider": {
+                                        "name": "BrandedFare"
+                                    }
+                                },
+                                {
+                                    "description": "PRE RESERVED SEAT ASSIGNMENT",
+                                    "isChargeable": true,
+                                    "amenityType": "PRE_RESERVED_SEAT",
+                                    "amenityProvider": {
+                                        "name": "BrandedFare"
+                                    }
+                                },
+                                {
+                                    "description": "PRIORITY BOARDING",
+                                    "isChargeable": true,
+                                    "amenityType": "TRAVEL_SERVICES",
+                                    "amenityProvider": {
+                                        "name": "BrandedFare"
+                                    }
+                                },
+                                {
+                                    "description": "CHANGEABLE TICKET",
+                                    "isChargeable": true,
+                                    "amenityType": "BRANDED_FARES",
+                                    "amenityProvider": {
+                                        "name": "BrandedFare"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "flight-offer",
+            "id": "2",
+            "source": "GDS",
+            "instantTicketingRequired": false,
+            "nonHomogeneous": false,
+            "oneWay": false,
+            "isUpsellOffer": false,
+            "lastTicketingDate": "2024-09-09",
+            "lastTicketingDateTime": "2024-09-09",
+            "numberOfBookableSeats": 7,
+            "itineraries": [
+                {
+                    "duration": "PT2H35M",
+                    "segments": [
+                        {
+                            "departure": {
+                                "iataCode": "MAD",
+                                "terminal": "2",
+                                "at": "2024-09-11T15:00:00"
+                            },
+                            "arrival": {
+                                "iataCode": "AMS",
+                                "at": "2024-09-11T17:35:00"
+                            },
+                            "carrierCode": "UX",
+                            "number": "1093",
+                            "aircraft": {
+                                "code": "73H"
+                            },
+                            "operating": {
+                                "carrierCode": "UX"
+                            },
+                            "duration": "PT2H35M",
+                            "id": "4",
+                            "numberOfStops": 0,
+                            "blacklistedInEU": false
+                        }
+                    ]
+                }
+            ],
+            "price": {
+                "currency": "EUR",
+                "total": "73.80",
+                "base": "55.00",
+                "fees": [
+                    {
+                        "amount": "0.00",
+                        "type": "SUPPLIER"
+                    },
+                    {
+                        "amount": "0.00",
+                        "type": "TICKETING"
+                    }
+                ],
+                "grandTotal": "73.80",
+                "additionalServices": [
+                    {
+                        "amount": "40.00",
+                        "type": "CHECKED_BAGS"
+                    }
+                ]
+            },
+            "pricingOptions": {
+                "fareType": [
+                    "PUBLISHED"
+                ],
+                "includedCheckedBagsOnly": false
+            },
+            "validatingAirlineCodes": [
+                "UX"
+            ],
+            "travelerPricings": [
+                {
+                    "travelerId": "1",
+                    "fareOption": "STANDARD",
+                    "travelerType": "ADULT",
+                    "price": {
+                        "currency": "EUR",
+                        "total": "73.80",
+                        "base": "55.00"
+                    },
+                    "fareDetailsBySegment": [
+                        {
+                            "segmentId": "4",
+                            "cabin": "ECONOMY",
+                            "fareBasis": "PYYO5L",
+                            "brandedFare": "LITE",
+                            "brandedFareLabel": "LITE",
+                            "class": "P",
+                            "includedCheckedBags": {
+                                "quantity": 0
+                            },
+                            "amenities": [
+                                {
+                                    "description": "FIRST PREPAID BAG",
+                                    "isChargeable": true,
+                                    "amenityType": "BAGGAGE",
+                                    "amenityProvider": {
+                                        "name": "BrandedFare"
+                                    }
+                                },
+                                {
+                                    "description": "PREPAID BAG",
+                                    "isChargeable": true,
+                                    "amenityType": "BAGGAGE",
+                                    "amenityProvider": {
+                                        "name": "BrandedFare"
+                                    }
+                                },
+                                {
+                                    "description": "CARRY ON HAND BAGGAGE",
+                                    "isChargeable": false,
+                                    "amenityType": "BAGGAGE",
+                                    "amenityProvider": {
+                                        "name": "BrandedFare"
+                                    }
+                                },
+                                {
+                                    "description": "PRE RESERVED SEAT ASSIGNMENT",
+                                    "isChargeable": true,
+                                    "amenityType": "PRE_RESERVED_SEAT",
+                                    "amenityProvider": {
+                                        "name": "BrandedFare"
+                                    }
+                                },
+                                {
+                                    "description": "PRIORITY BOARDING",
+                                    "isChargeable": true,
+                                    "amenityType": "TRAVEL_SERVICES",
+                                    "amenityProvider": {
+                                        "name": "BrandedFare"
+                                    }
+                                },
+                                {
+                                    "description": "CHANGEABLE TICKET",
+                                    "isChargeable": true,
+                                    "amenityType": "BRANDED_FARES",
+                                    "amenityProvider": {
+                                        "name": "BrandedFare"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "flight-offer",
+            "id": "3",
+            "source": "GDS",
+            "instantTicketingRequired": false,
+            "nonHomogeneous": false,
+            "oneWay": false,
+            "isUpsellOffer": false,
+            "lastTicketingDate": "2024-09-09",
+            "lastTicketingDateTime": "2024-09-09",
+            "numberOfBookableSeats": 4,
+            "itineraries": [
+                {
+                    "duration": "PT2H40M",
+                    "segments": [
+                        {
+                            "departure": {
+                                "iataCode": "MAD",
+                                "terminal": "4",
+                                "at": "2024-09-11T08:40:00"
+                            },
+                            "arrival": {
+                                "iataCode": "AMS",
+                                "at": "2024-09-11T11:20:00"
+                            },
+                            "carrierCode": "VY",
+                            "number": "5821",
+                            "aircraft": {
+                                "code": "32S"
+                            },
+                            "duration": "PT2H40M",
+                            "id": "6",
+                            "numberOfStops": 0,
+                            "blacklistedInEU": false
+                        }
+                    ]
+                }
+            ],
+            "price": {
+                "currency": "EUR",
+                "total": "75.80",
+                "base": "57.00",
+                "fees": [
+                    {
+                        "amount": "0.00",
+                        "type": "SUPPLIER"
+                    },
+                    {
+                        "amount": "0.00",
+                        "type": "TICKETING"
+                    }
+                ],
+                "grandTotal": "75.80"
+            },
+            "pricingOptions": {
+                "fareType": [
+                    "PUBLISHED"
+                ],
+                "includedCheckedBagsOnly": true
+            },
+            "validatingAirlineCodes": [
+                "VY"
+            ],
+            "travelerPricings": [
+                {
+                    "travelerId": "1",
+                    "fareOption": "STANDARD",
+                    "travelerType": "ADULT",
+                    "price": {
+                        "currency": "EUR",
+                        "total": "75.80",
+                        "base": "57.00"
+                    },
+                    "fareDetailsBySegment": [
+                        {
+                            "segmentId": "6",
+                            "cabin": "ECONOMY",
+                            "fareBasis": "PWIBOPT",
+                            "class": "P",
+                            "includedCheckedBags": {
+                                "quantity": 1
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "flight-offer",
+            "id": "4",
+            "source": "GDS",
+            "instantTicketingRequired": false,
+            "nonHomogeneous": false,
+            "oneWay": false,
+            "isUpsellOffer": false,
+            "lastTicketingDate": "2024-09-09",
+            "lastTicketingDateTime": "2024-09-09",
+            "numberOfBookableSeats": 4,
+            "itineraries": [
+                {
+                    "duration": "PT2H40M",
+                    "segments": [
+                        {
+                            "departure": {
+                                "iataCode": "MAD",
+                                "terminal": "4",
+                                "at": "2024-09-11T15:50:00"
+                            },
+                            "arrival": {
+                                "iataCode": "AMS",
+                                "at": "2024-09-11T18:30:00"
+                            },
+                            "carrierCode": "VY",
+                            "number": "5826",
+                            "aircraft": {
+                                "code": "32S"
+                            },
+                            "duration": "PT2H40M",
+                            "id": "10",
+                            "numberOfStops": 0,
+                            "blacklistedInEU": false
+                        }
+                    ]
+                }
+            ],
+            "price": {
+                "currency": "EUR",
+                "total": "75.80",
+                "base": "57.00",
+                "fees": [
+                    {
+                        "amount": "0.00",
+                        "type": "SUPPLIER"
+                    },
+                    {
+                        "amount": "0.00",
+                        "type": "TICKETING"
+                    }
+                ],
+                "grandTotal": "75.80"
+            },
+            "pricingOptions": {
+                "fareType": [
+                    "PUBLISHED"
+                ],
+                "includedCheckedBagsOnly": true
+            },
+            "validatingAirlineCodes": [
+                "VY"
+            ],
+            "travelerPricings": [
+                {
+                    "travelerId": "1",
+                    "fareOption": "STANDARD",
+                    "travelerType": "ADULT",
+                    "price": {
+                        "currency": "EUR",
+                        "total": "75.80",
+                        "base": "57.00"
+                    },
+                    "fareDetailsBySegment": [
+                        {
+                            "segmentId": "10",
+                            "cabin": "ECONOMY",
+                            "fareBasis": "PWIBOPT",
+                            "class": "P",
+                            "includedCheckedBags": {
+                                "quantity": 1
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "flight-offer",
+            "id": "5",
+            "source": "GDS",
+            "instantTicketingRequired": false,
+            "nonHomogeneous": false,
+            "oneWay": false,
+            "isUpsellOffer": false,
+            "lastTicketingDate": "2024-09-09",
+            "lastTicketingDateTime": "2024-09-09",
+            "numberOfBookableSeats": 9,
+            "itineraries": [
+                {
+                    "duration": "PT2H40M",
+                    "segments": [
+                        {
+                            "departure": {
+                                "iataCode": "MAD",
+                                "terminal": "4",
+                                "at": "2024-09-11T08:40:00"
+                            },
+                            "arrival": {
+                                "iataCode": "AMS",
+                                "at": "2024-09-11T11:20:00"
+                            },
+                            "carrierCode": "IB",
+                            "number": "3722",
+                            "aircraft": {
+                                "code": "32A"
+                            },
+                            "operating": {
+                                "carrierCode": "I2"
+                            },
+                            "duration": "PT2H40M",
+                            "id": "7",
+                            "numberOfStops": 0,
+                            "blacklistedInEU": false
+                        }
+                    ]
+                }
+            ],
+            "price": {
+                "currency": "EUR",
+                "total": "80.80",
+                "base": "62.00",
+                "fees": [
+                    {
+                        "amount": "0.00",
+                        "type": "SUPPLIER"
+                    },
+                    {
+                        "amount": "0.00",
+                        "type": "TICKETING"
+                    }
+                ],
+                "grandTotal": "80.80",
+                "additionalServices": [
+                    {
+                        "amount": "50.00",
+                        "type": "CHECKED_BAGS"
+                    }
+                ]
+            },
+            "pricingOptions": {
+                "fareType": [
+                    "PUBLISHED"
+                ],
+                "includedCheckedBagsOnly": true
+            },
+            "validatingAirlineCodes": [
+                "IB"
+            ],
+            "travelerPricings": [
+                {
+                    "travelerId": "1",
+                    "fareOption": "STANDARD",
+                    "travelerType": "ADULT",
+                    "price": {
+                        "currency": "EUR",
+                        "total": "80.80",
+                        "base": "62.00"
+                    },
+                    "fareDetailsBySegment": [
+                        {
+                            "segmentId": "7",
+                            "cabin": "ECONOMY",
+                            "fareBasis": "ADNNEOM2",
+                            "brandedFare": "OPTIMA",
+                            "brandedFareLabel": "OPTIMA",
+                            "class": "A",
+                            "includedCheckedBags": {
+                                "quantity": 1
+                            },
+                            "amenities": [
+                                {
+                                    "description": "SECOND CHECKED BAG",
+                                    "isChargeable": true,
+                                    "amenityType": "BAGGAGE",
+                                    "amenityProvider": {
+                                        "name": "BrandedFare"
+                                    }
+                                },
+                                {
+                                    "description": "THIRD CHECKED BAG",
+                                    "isChargeable": true,
+                                    "amenityType": "BAGGAGE",
+                                    "amenityProvider": {
+                                        "name": "BrandedFare"
+                                    }
+                                },
+                                {
+                                    "description": "SNACK OR DRINK",
+                                    "isChargeable": true,
+                                    "amenityType": "MEAL",
+                                    "amenityProvider": {
+                                        "name": "BrandedFare"
+                                    }
+                                },
+                                {
+                                    "description": "WIFI CONNECTION",
+                                    "isChargeable": true,
+                                    "amenityType": "TRAVEL_SERVICES",
+                                    "amenityProvider": {
+                                        "name": "BrandedFare"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "flight-offer",
+            "id": "6",
+            "source": "GDS",
+            "instantTicketingRequired": false,
+            "nonHomogeneous": false,
+            "oneWay": false,
+            "isUpsellOffer": false,
+            "lastTicketingDate": "2024-09-09",
+            "lastTicketingDateTime": "2024-09-09",
+            "numberOfBookableSeats": 9,
+            "itineraries": [
+                {
+                    "duration": "PT2H40M",
+                    "segments": [
+                        {
+                            "departure": {
+                                "iataCode": "MAD",
+                                "terminal": "4",
+                                "at": "2024-09-11T13:05:00"
+                            },
+                            "arrival": {
+                                "iataCode": "AMS",
+                                "at": "2024-09-11T15:45:00"
+                            },
+                            "carrierCode": "IB",
+                            "number": "3720",
+                            "aircraft": {
+                                "code": "32A"
+                            },
+                            "operating": {
+                                "carrierCode": "I2"
+                            },
+                            "duration": "PT2H40M",
+                            "id": "9",
+                            "numberOfStops": 0,
+                            "blacklistedInEU": false
+                        }
+                    ]
+                }
+            ],
+            "price": {
+                "currency": "EUR",
+                "total": "80.80",
+                "base": "62.00",
+                "fees": [
+                    {
+                        "amount": "0.00",
+                        "type": "SUPPLIER"
+                    },
+                    {
+                        "amount": "0.00",
+                        "type": "TICKETING"
+                    }
+                ],
+                "grandTotal": "80.80",
+                "additionalServices": [
+                    {
+                        "amount": "50.00",
+                        "type": "CHECKED_BAGS"
+                    }
+                ]
+            },
+            "pricingOptions": {
+                "fareType": [
+                    "PUBLISHED"
+                ],
+                "includedCheckedBagsOnly": true
+            },
+            "validatingAirlineCodes": [
+                "IB"
+            ],
+            "travelerPricings": [
+                {
+                    "travelerId": "1",
+                    "fareOption": "STANDARD",
+                    "travelerType": "ADULT",
+                    "price": {
+                        "currency": "EUR",
+                        "total": "80.80",
+                        "base": "62.00"
+                    },
+                    "fareDetailsBySegment": [
+                        {
+                            "segmentId": "9",
+                            "cabin": "ECONOMY",
+                            "fareBasis": "ADNNEOM2",
+                            "brandedFare": "OPTIMA",
+                            "brandedFareLabel": "OPTIMA",
+                            "class": "A",
+                            "includedCheckedBags": {
+                                "quantity": 1
+                            },
+                            "amenities": [
+                                {
+                                    "description": "SECOND CHECKED BAG",
+                                    "isChargeable": true,
+                                    "amenityType": "BAGGAGE",
+                                    "amenityProvider": {
+                                        "name": "BrandedFare"
+                                    }
+                                },
+                                {
+                                    "description": "THIRD CHECKED BAG",
+                                    "isChargeable": true,
+                                    "amenityType": "BAGGAGE",
+                                    "amenityProvider": {
+                                        "name": "BrandedFare"
+                                    }
+                                },
+                                {
+                                    "description": "SNACK OR DRINK",
+                                    "isChargeable": true,
+                                    "amenityType": "MEAL",
+                                    "amenityProvider": {
+                                        "name": "BrandedFare"
+                                    }
+                                },
+                                {
+                                    "description": "WIFI CONNECTION",
+                                    "isChargeable": true,
+                                    "amenityType": "TRAVEL_SERVICES",
+                                    "amenityProvider": {
+                                        "name": "BrandedFare"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "flight-offer",
+            "id": "7",
+            "source": "GDS",
+            "instantTicketingRequired": false,
+            "nonHomogeneous": false,
+            "oneWay": false,
+            "isUpsellOffer": false,
+            "lastTicketingDate": "2024-09-09",
+            "lastTicketingDateTime": "2024-09-09",
+            "numberOfBookableSeats": 9,
+            "itineraries": [
+                {
+                    "duration": "PT2H40M",
+                    "segments": [
+                        {
+                            "departure": {
+                                "iataCode": "MAD",
+                                "terminal": "4",
+                                "at": "2024-09-11T15:50:00"
+                            },
+                            "arrival": {
+                                "iataCode": "AMS",
+                                "at": "2024-09-11T18:30:00"
+                            },
+                            "carrierCode": "IB",
+                            "number": "3724",
+                            "aircraft": {
+                                "code": "32A"
+                            },
+                            "operating": {
+                                "carrierCode": "I2"
+                            },
+                            "duration": "PT2H40M",
+                            "id": "11",
+                            "numberOfStops": 0,
+                            "blacklistedInEU": false
+                        }
+                    ]
+                }
+            ],
+            "price": {
+                "currency": "EUR",
+                "total": "80.80",
+                "base": "62.00",
+                "fees": [
+                    {
+                        "amount": "0.00",
+                        "type": "SUPPLIER"
+                    },
+                    {
+                        "amount": "0.00",
+                        "type": "TICKETING"
+                    }
+                ],
+                "grandTotal": "80.80",
+                "additionalServices": [
+                    {
+                        "amount": "50.00",
+                        "type": "CHECKED_BAGS"
+                    }
+                ]
+            },
+            "pricingOptions": {
+                "fareType": [
+                    "PUBLISHED"
+                ],
+                "includedCheckedBagsOnly": true
+            },
+            "validatingAirlineCodes": [
+                "IB"
+            ],
+            "travelerPricings": [
+                {
+                    "travelerId": "1",
+                    "fareOption": "STANDARD",
+                    "travelerType": "ADULT",
+                    "price": {
+                        "currency": "EUR",
+                        "total": "80.80",
+                        "base": "62.00"
+                    },
+                    "fareDetailsBySegment": [
+                        {
+                            "segmentId": "11",
+                            "cabin": "ECONOMY",
+                            "fareBasis": "ADNNEOM2",
+                            "brandedFare": "OPTIMA",
+                            "brandedFareLabel": "OPTIMA",
+                            "class": "A",
+                            "includedCheckedBags": {
+                                "quantity": 1
+                            },
+                            "amenities": [
+                                {
+                                    "description": "SECOND CHECKED BAG",
+                                    "isChargeable": true,
+                                    "amenityType": "BAGGAGE",
+                                    "amenityProvider": {
+                                        "name": "BrandedFare"
+                                    }
+                                },
+                                {
+                                    "description": "THIRD CHECKED BAG",
+                                    "isChargeable": true,
+                                    "amenityType": "BAGGAGE",
+                                    "amenityProvider": {
+                                        "name": "BrandedFare"
+                                    }
+                                },
+                                {
+                                    "description": "SNACK OR DRINK",
+                                    "isChargeable": true,
+                                    "amenityType": "MEAL",
+                                    "amenityProvider": {
+                                        "name": "BrandedFare"
+                                    }
+                                },
+                                {
+                                    "description": "WIFI CONNECTION",
+                                    "isChargeable": true,
+                                    "amenityType": "TRAVEL_SERVICES",
+                                    "amenityProvider": {
+                                        "name": "BrandedFare"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "flight-offer",
+            "id": "8",
+            "source": "GDS",
+            "instantTicketingRequired": false,
+            "nonHomogeneous": false,
+            "oneWay": false,
+            "isUpsellOffer": false,
+            "lastTicketingDate": "2024-09-11",
+            "lastTicketingDateTime": "2024-09-11",
+            "numberOfBookableSeats": 9,
+            "itineraries": [
+                {
+                    "duration": "PT2H25M",
+                    "segments": [
+                        {
+                            "departure": {
+                                "iataCode": "MAD",
+                                "terminal": "2",
+                                "at": "2024-09-11T06:00:00"
+                            },
+                            "arrival": {
+                                "iataCode": "AMS",
+                                "at": "2024-09-11T08:25:00"
+                            },
+                            "carrierCode": "KL",
+                            "number": "1500",
+                            "aircraft": {
+                                "code": "73H"
+                            },
+                            "operating": {
+                                "carrierCode": "KL"
+                            },
+                            "duration": "PT2H25M",
+                            "id": "1",
+                            "numberOfStops": 0,
+                            "blacklistedInEU": false
+                        }
+                    ]
+                }
+            ],
+            "price": {
+                "currency": "EUR",
+                "total": "126.80",
+                "base": "84.00",
+                "fees": [
+                    {
+                        "amount": "0.00",
+                        "type": "SUPPLIER"
+                    },
+                    {
+                        "amount": "0.00",
+                        "type": "TICKETING"
+                    }
+                ],
+                "grandTotal": "126.80",
+                "additionalServices": [
+                    {
+                        "amount": "40.00",
+                        "type": "CHECKED_BAGS"
+                    }
+                ]
+            },
+            "pricingOptions": {
+                "fareType": [
+                    "PUBLISHED"
+                ],
+                "includedCheckedBagsOnly": false
+            },
+            "validatingAirlineCodes": [
+                "AF"
+            ],
+            "travelerPricings": [
+                {
+                    "travelerId": "1",
+                    "fareOption": "STANDARD",
+                    "travelerType": "ADULT",
+                    "price": {
+                        "currency": "EUR",
+                        "total": "126.80",
+                        "base": "84.00"
+                    },
+                    "fareDetailsBySegment": [
+                        {
+                            "segmentId": "1",
+                            "cabin": "ECONOMY",
+                            "fareBasis": "TYQ0BALA",
+                            "brandedFare": "LIGHT",
+                            "brandedFareLabel": "ECONOMY LIGHT",
+                            "class": "T",
+                            "includedCheckedBags": {
+                                "quantity": 0
+                            },
+                            "amenities": [
+                                {
+                                    "description": "CHECKED BAG 1PC OF 23KG 158CM",
+                                    "isChargeable": true,
+                                    "amenityType": "BAGGAGE",
+                                    "amenityProvider": {
+                                        "name": "BrandedFare"
+                                    }
+                                },
+                                {
+                                    "description": "SNACK",
+                                    "isChargeable": false,
+                                    "amenityType": "MEAL",
+                                    "amenityProvider": {
+                                        "name": "BrandedFare"
+                                    }
+                                },
+                                {
+                                    "description": "BEVERAGE",
+                                    "isChargeable": false,
+                                    "amenityType": "MEAL",
+                                    "amenityProvider": {
+                                        "name": "BrandedFare"
+                                    }
+                                },
+                                {
+                                    "description": "CHOICE OF STANDARD SEAT",
+                                    "isChargeable": true,
+                                    "amenityType": "BRANDED_FARES",
+                                    "amenityProvider": {
+                                        "name": "BrandedFare"
+                                    }
+                                },
+                                {
+                                    "description": "UPGRADE ELIGIBILITY",
+                                    "isChargeable": true,
+                                    "amenityType": "BRANDED_FARES",
+                                    "amenityProvider": {
+                                        "name": "BrandedFare"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "flight-offer",
+            "id": "9",
+            "source": "GDS",
+            "instantTicketingRequired": false,
+            "nonHomogeneous": false,
+            "oneWay": false,
+            "isUpsellOffer": false,
+            "lastTicketingDate": "2024-09-11",
+            "lastTicketingDateTime": "2024-09-11",
+            "numberOfBookableSeats": 9,
+            "itineraries": [
+                {
+                    "duration": "PT2H30M",
+                    "segments": [
+                        {
+                            "departure": {
+                                "iataCode": "MAD",
+                                "terminal": "2",
+                                "at": "2024-09-11T13:05:00"
+                            },
+                            "arrival": {
+                                "iataCode": "AMS",
+                                "at": "2024-09-11T15:35:00"
+                            },
+                            "carrierCode": "KL",
+                            "number": "1504",
+                            "aircraft": {
+                                "code": "73H"
+                            },
+                            "operating": {
+                                "carrierCode": "KL"
+                            },
+                            "duration": "PT2H30M",
+                            "id": "2",
+                            "numberOfStops": 0,
+                            "blacklistedInEU": false
+                        }
+                    ]
+                }
+            ],
+            "price": {
+                "currency": "EUR",
+                "total": "126.80",
+                "base": "84.00",
+                "fees": [
+                    {
+                        "amount": "0.00",
+                        "type": "SUPPLIER"
+                    },
+                    {
+                        "amount": "0.00",
+                        "type": "TICKETING"
+                    }
+                ],
+                "grandTotal": "126.80",
+                "additionalServices": [
+                    {
+                        "amount": "40.00",
+                        "type": "CHECKED_BAGS"
+                    }
+                ]
+            },
+            "pricingOptions": {
+                "fareType": [
+                    "PUBLISHED"
+                ],
+                "includedCheckedBagsOnly": false
+            },
+            "validatingAirlineCodes": [
+                "AF"
+            ],
+            "travelerPricings": [
+                {
+                    "travelerId": "1",
+                    "fareOption": "STANDARD",
+                    "travelerType": "ADULT",
+                    "price": {
+                        "currency": "EUR",
+                        "total": "126.80",
+                        "base": "84.00"
+                    },
+                    "fareDetailsBySegment": [
+                        {
+                            "segmentId": "2",
+                            "cabin": "ECONOMY",
+                            "fareBasis": "TYQ0BALA",
+                            "brandedFare": "LIGHT",
+                            "brandedFareLabel": "ECONOMY LIGHT",
+                            "class": "T",
+                            "includedCheckedBags": {
+                                "quantity": 0
+                            },
+                            "amenities": [
+                                {
+                                    "description": "CHECKED BAG 1PC OF 23KG 158CM",
+                                    "isChargeable": true,
+                                    "amenityType": "BAGGAGE",
+                                    "amenityProvider": {
+                                        "name": "BrandedFare"
+                                    }
+                                },
+                                {
+                                    "description": "SNACK",
+                                    "isChargeable": false,
+                                    "amenityType": "MEAL",
+                                    "amenityProvider": {
+                                        "name": "BrandedFare"
+                                    }
+                                },
+                                {
+                                    "description": "BEVERAGE",
+                                    "isChargeable": false,
+                                    "amenityType": "MEAL",
+                                    "amenityProvider": {
+                                        "name": "BrandedFare"
+                                    }
+                                },
+                                {
+                                    "description": "CHOICE OF STANDARD SEAT",
+                                    "isChargeable": true,
+                                    "amenityType": "BRANDED_FARES",
+                                    "amenityProvider": {
+                                        "name": "BrandedFare"
+                                    }
+                                },
+                                {
+                                    "description": "UPGRADE ELIGIBILITY",
+                                    "isChargeable": true,
+                                    "amenityType": "BRANDED_FARES",
+                                    "amenityProvider": {
+                                        "name": "BrandedFare"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "flight-offer",
+            "id": "10",
+            "source": "GDS",
+            "instantTicketingRequired": false,
+            "nonHomogeneous": false,
+            "oneWay": false,
+            "isUpsellOffer": false,
+            "lastTicketingDate": "2024-09-11",
+            "lastTicketingDateTime": "2024-09-11",
+            "numberOfBookableSeats": 9,
+            "itineraries": [
+                {
+                    "duration": "PT2H35M",
+                    "segments": [
+                        {
+                            "departure": {
+                                "iataCode": "MAD",
+                                "terminal": "2",
+                                "at": "2024-09-11T17:10:00"
+                            },
+                            "arrival": {
+                                "iataCode": "AMS",
+                                "at": "2024-09-11T19:45:00"
+                            },
+                            "carrierCode": "KL",
+                            "number": "1506",
+                            "aircraft": {
+                                "code": "73J"
+                            },
+                            "operating": {
+                                "carrierCode": "KL"
+                            },
+                            "duration": "PT2H35M",
+                            "id": "5",
+                            "numberOfStops": 0,
+                            "blacklistedInEU": false
+                        }
+                    ]
+                }
+            ],
+            "price": {
+                "currency": "EUR",
+                "total": "126.80",
+                "base": "84.00",
+                "fees": [
+                    {
+                        "amount": "0.00",
+                        "type": "SUPPLIER"
+                    },
+                    {
+                        "amount": "0.00",
+                        "type": "TICKETING"
+                    }
+                ],
+                "grandTotal": "126.80",
+                "additionalServices": [
+                    {
+                        "amount": "40.00",
+                        "type": "CHECKED_BAGS"
+                    }
+                ]
+            },
+            "pricingOptions": {
+                "fareType": [
+                    "PUBLISHED"
+                ],
+                "includedCheckedBagsOnly": false
+            },
+            "validatingAirlineCodes": [
+                "AF"
+            ],
+            "travelerPricings": [
+                {
+                    "travelerId": "1",
+                    "fareOption": "STANDARD",
+                    "travelerType": "ADULT",
+                    "price": {
+                        "currency": "EUR",
+                        "total": "126.80",
+                        "base": "84.00"
+                    },
+                    "fareDetailsBySegment": [
+                        {
+                            "segmentId": "5",
+                            "cabin": "ECONOMY",
+                            "fareBasis": "TYQ0BALA",
+                            "brandedFare": "LIGHT",
+                            "brandedFareLabel": "ECONOMY LIGHT",
+                            "class": "T",
+                            "includedCheckedBags": {
+                                "quantity": 0
+                            },
+                            "amenities": [
+                                {
+                                    "description": "CHECKED BAG 1PC OF 23KG 158CM",
+                                    "isChargeable": true,
+                                    "amenityType": "BAGGAGE",
+                                    "amenityProvider": {
+                                        "name": "BrandedFare"
+                                    }
+                                },
+                                {
+                                    "description": "SNACK",
+                                    "isChargeable": false,
+                                    "amenityType": "MEAL",
+                                    "amenityProvider": {
+                                        "name": "BrandedFare"
+                                    }
+                                },
+                                {
+                                    "description": "BEVERAGE",
+                                    "isChargeable": false,
+                                    "amenityType": "MEAL",
+                                    "amenityProvider": {
+                                        "name": "BrandedFare"
+                                    }
+                                },
+                                {
+                                    "description": "CHOICE OF STANDARD SEAT",
+                                    "isChargeable": true,
+                                    "amenityType": "BRANDED_FARES",
+                                    "amenityProvider": {
+                                        "name": "BrandedFare"
+                                    }
+                                },
+                                {
+                                    "description": "UPGRADE ELIGIBILITY",
+                                    "isChargeable": true,
+                                    "amenityType": "BRANDED_FARES",
+                                    "amenityProvider": {
+                                        "name": "BrandedFare"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "flight-offer",
+            "id": "11",
+            "source": "GDS",
+            "instantTicketingRequired": false,
+            "nonHomogeneous": false,
+            "oneWay": false,
+            "isUpsellOffer": false,
+            "lastTicketingDate": "2024-09-11",
+            "lastTicketingDateTime": "2024-09-11",
+            "numberOfBookableSeats": 9,
+            "itineraries": [
+                {
+                    "duration": "PT2H40M",
+                    "segments": [
+                        {
+                            "departure": {
+                                "iataCode": "MAD",
+                                "terminal": "2",
+                                "at": "2024-09-11T10:20:00"
+                            },
+                            "arrival": {
+                                "iataCode": "AMS",
+                                "at": "2024-09-11T13:00:00"
+                            },
+                            "carrierCode": "KL",
+                            "number": "1502",
+                            "aircraft": {
+                                "code": "73H"
+                            },
+                            "operating": {
+                                "carrierCode": "KL"
+                            },
+                            "duration": "PT2H40M",
+                            "id": "8",
+                            "numberOfStops": 0,
+                            "blacklistedInEU": false
+                        }
+                    ]
+                }
+            ],
+            "price": {
+                "currency": "EUR",
+                "total": "126.80",
+                "base": "84.00",
+                "fees": [
+                    {
+                        "amount": "0.00",
+                        "type": "SUPPLIER"
+                    },
+                    {
+                        "amount": "0.00",
+                        "type": "TICKETING"
+                    }
+                ],
+                "grandTotal": "126.80",
+                "additionalServices": [
+                    {
+                        "amount": "40.00",
+                        "type": "CHECKED_BAGS"
+                    }
+                ]
+            },
+            "pricingOptions": {
+                "fareType": [
+                    "PUBLISHED"
+                ],
+                "includedCheckedBagsOnly": false
+            },
+            "validatingAirlineCodes": [
+                "AF"
+            ],
+            "travelerPricings": [
+                {
+                    "travelerId": "1",
+                    "fareOption": "STANDARD",
+                    "travelerType": "ADULT",
+                    "price": {
+                        "currency": "EUR",
+                        "total": "126.80",
+                        "base": "84.00"
+                    },
+                    "fareDetailsBySegment": [
+                        {
+                            "segmentId": "8",
+                            "cabin": "ECONOMY",
+                            "fareBasis": "TYQ0BALA",
+                            "brandedFare": "LIGHT",
+                            "brandedFareLabel": "ECONOMY LIGHT",
+                            "class": "T",
+                            "includedCheckedBags": {
+                                "quantity": 0
+                            },
+                            "amenities": [
+                                {
+                                    "description": "CHECKED BAG 1PC OF 23KG 158CM",
+                                    "isChargeable": true,
+                                    "amenityType": "BAGGAGE",
+                                    "amenityProvider": {
+                                        "name": "BrandedFare"
+                                    }
+                                },
+                                {
+                                    "description": "SNACK",
+                                    "isChargeable": false,
+                                    "amenityType": "MEAL",
+                                    "amenityProvider": {
+                                        "name": "BrandedFare"
+                                    }
+                                },
+                                {
+                                    "description": "BEVERAGE",
+                                    "isChargeable": false,
+                                    "amenityType": "MEAL",
+                                    "amenityProvider": {
+                                        "name": "BrandedFare"
+                                    }
+                                },
+                                {
+                                    "description": "CHOICE OF STANDARD SEAT",
+                                    "isChargeable": true,
+                                    "amenityType": "BRANDED_FARES",
+                                    "amenityProvider": {
+                                        "name": "BrandedFare"
+                                    }
+                                },
+                                {
+                                    "description": "UPGRADE ELIGIBILITY",
+                                    "isChargeable": true,
+                                    "amenityType": "BRANDED_FARES",
+                                    "amenityProvider": {
+                                        "name": "BrandedFare"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "flight-offer",
+            "id": "12",
+            "source": "GDS",
+            "instantTicketingRequired": false,
+            "nonHomogeneous": false,
+            "oneWay": false,
+            "isUpsellOffer": false,
+            "lastTicketingDate": "2024-09-11",
+            "lastTicketingDateTime": "2024-09-11",
+            "numberOfBookableSeats": 9,
+            "itineraries": [
+                {
+                    "duration": "PT2H40M",
+                    "segments": [
+                        {
+                            "departure": {
+                                "iataCode": "MAD",
+                                "terminal": "2",
+                                "at": "2024-09-11T20:20:00"
+                            },
+                            "arrival": {
+                                "iataCode": "AMS",
+                                "at": "2024-09-11T23:00:00"
+                            },
+                            "carrierCode": "KL",
+                            "number": "1508",
+                            "aircraft": {
+                                "code": "73H"
+                            },
+                            "operating": {
+                                "carrierCode": "KL"
+                            },
+                            "duration": "PT2H40M",
+                            "id": "12",
+                            "numberOfStops": 0,
+                            "blacklistedInEU": false
+                        }
+                    ]
+                }
+            ],
+            "price": {
+                "currency": "EUR",
+                "total": "126.80",
+                "base": "84.00",
+                "fees": [
+                    {
+                        "amount": "0.00",
+                        "type": "SUPPLIER"
+                    },
+                    {
+                        "amount": "0.00",
+                        "type": "TICKETING"
+                    }
+                ],
+                "grandTotal": "126.80",
+                "additionalServices": [
+                    {
+                        "amount": "40.00",
+                        "type": "CHECKED_BAGS"
+                    }
+                ]
+            },
+            "pricingOptions": {
+                "fareType": [
+                    "PUBLISHED"
+                ],
+                "includedCheckedBagsOnly": false
+            },
+            "validatingAirlineCodes": [
+                "AF"
+            ],
+            "travelerPricings": [
+                {
+                    "travelerId": "1",
+                    "fareOption": "STANDARD",
+                    "travelerType": "ADULT",
+                    "price": {
+                        "currency": "EUR",
+                        "total": "126.80",
+                        "base": "84.00"
+                    },
+                    "fareDetailsBySegment": [
+                        {
+                            "segmentId": "12",
+                            "cabin": "ECONOMY",
+                            "fareBasis": "TYQ0BALA",
+                            "brandedFare": "LIGHT",
+                            "brandedFareLabel": "ECONOMY LIGHT",
+                            "class": "T",
+                            "includedCheckedBags": {
+                                "quantity": 0
+                            },
+                            "amenities": [
+                                {
+                                    "description": "CHECKED BAG 1PC OF 23KG 158CM",
+                                    "isChargeable": true,
+                                    "amenityType": "BAGGAGE",
+                                    "amenityProvider": {
+                                        "name": "BrandedFare"
+                                    }
+                                },
+                                {
+                                    "description": "SNACK",
+                                    "isChargeable": false,
+                                    "amenityType": "MEAL",
+                                    "amenityProvider": {
+                                        "name": "BrandedFare"
+                                    }
+                                },
+                                {
+                                    "description": "BEVERAGE",
+                                    "isChargeable": false,
+                                    "amenityType": "MEAL",
+                                    "amenityProvider": {
+                                        "name": "BrandedFare"
+                                    }
+                                },
+                                {
+                                    "description": "CHOICE OF STANDARD SEAT",
+                                    "isChargeable": true,
+                                    "amenityType": "BRANDED_FARES",
+                                    "amenityProvider": {
+                                        "name": "BrandedFare"
+                                    }
+                                },
+                                {
+                                    "description": "UPGRADE ELIGIBILITY",
+                                    "isChargeable": true,
+                                    "amenityType": "BRANDED_FARES",
+                                    "amenityProvider": {
+                                        "name": "BrandedFare"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "dictionaries": {
+        "locations": {
+            "MAD": {
+                "cityCode": "MAD",
+                "countryCode": "ES"
+            },
+            "AMS": {
+                "cityCode": "AMS",
+                "countryCode": "NL"
+            }
+        },
+        "aircraft": {
+            "789": "BOEING 787-9",
+            "32A": "AIRBUS A320 (SHARKLETS)",
+            "32S": "AIRBUS INDUSTRIE A318/A319/A320/A321",
+            "73H": "BOEING 737-800 (WINGLETS)",
+            "73J": "BOEING 737-900"
+        },
+        "currencies": {
+            "EUR": "EURO"
+        },
+        "carriers": {
+            "KL": "KLM ROYAL DUTCH AIRLINES",
+            "UX": "AIR EUROPA",
+            "VY": "VUELING AIRLINES",
+            "IB": "IBERIA",
+            "I2": "IBERIA EXPRESS"
+        }
+    }
+}

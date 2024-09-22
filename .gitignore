@@ -1,0 +1,11 @@
+logs/*
+dags/*.pyc
+*.log*
+*.pyc
+dags/__pycache__/*
+dags/__pycache__/hello_world_dag.cpython-310.pyc
+logs/dag_processor_manager/dag_processor_manager.log
+logs/scheduler/latest
+logs/scheduler/*
+logs/*
+dags/__pycache__/hello_world_dag.cpython-310.pyc
