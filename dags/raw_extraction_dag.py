@@ -145,7 +145,7 @@ with DAG(dag_id='lambda_example_dag', default_args=default_args, schedule_interv
     dag=dag,
 )
     
-    invoke_lambda_task = LambdaInvokeFunctionOperator(
+    invoke_flights_suggestions_task = LambdaInvokeFunctionOperator(
         task_id='invoke_lambda_with_payload',
         function_name='my-first-lambda',
         payload="{{ task_instance.xcom_pull(task_ids='build_payload') }}",  # Usar XCom para obtener el payload
@@ -160,20 +160,14 @@ with DAG(dag_id='lambda_example_dag', default_args=default_args, schedule_interv
     dag=dag,
 )
     
-    fetch_amadeus_info_task = LambdaInvokeFunctionOperator(
+    fetch_additional_info_task = LambdaInvokeFunctionOperator(
         task_id='fetch_amadeus_info_task',
         function_name='raw-add-amadeus-info',
         payload="{{ task_instance.xcom_pull(task_ids='create_addition_info_payload') }}",  # Usar XCom para obtener el payload
         aws_conn_id='aws_default',
         region_name='eu-south-2',
         dag=dag
-    )
+)
     
-#     invoke_amadeus_lambda_task = PythonOperator(
-#         task_id='invoke_addional_amadeus_info',
-#         python_callable=invoke_addional_amadeus_info,
-#         provide_context=True,
-#         dag=dag
-#     )
 
-    generate_token_task >> save_token_task >> build_payload_task >> invoke_lambda_task >> build_additional_info_payload_task >> fetch_amadeus_info_task
+    generate_token_task >> save_token_task >> build_payload_task >> invoke_flights_suggestions_task >> build_additional_info_payload_task >> fetch_additional_info_task

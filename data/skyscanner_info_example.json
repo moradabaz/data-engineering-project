@@ -1,0 +1,1098 @@
+{
+    "data": {
+        "context": {
+            "status": "incomplete",
+            "sessionId": "ClQIARJQCk4KJDY5MDA2YjZkLWE0ZTUtNGQxZi1iY2Q3LTkyYjQ4YTI0MDVkMxACGiQ4MWU1NTU3Zi1lY2ZmLTRjZDUtODRiNS1mYjMzZWRjMDk2YTYSKHVzc18xMDY2M2FiNy1lNmJiLTQyNWYtOWYzZi04ZWI0YTU0MGM0NDI=",
+            "totalResults": 10,
+            "filterTotalResults": 9
+        },
+        "itineraries": [
+            {
+                "id": "13870-2409110705--32680-0-9451-2409110940",
+                "price": {
+                    "raw": 86.7,
+                    "formatted": "$87",
+                    "pricingOptionId": "OHPQh8qN-G44"
+                },
+                "legs": [
+                    {
+                        "id": "13870-2409110705--32680-0-9451-2409110940",
+                        "origin": {
+                            "id": "MAD",
+                            "entityId": "95565077",
+                            "name": "Madrid",
+                            "displayCode": "MAD",
+                            "city": "Madrid",
+                            "country": "Spain",
+                            "isHighlighted": false
+                        },
+                        "destination": {
+                            "id": "AMS",
+                            "entityId": "95565044",
+                            "name": "Amsterdam Schiphol",
+                            "displayCode": "AMS",
+                            "city": "Amsterdam",
+                            "country": "Netherlands",
+                            "isHighlighted": false
+                        },
+                        "durationInMinutes": 155,
+                        "stopCount": 0,
+                        "isSmallestStops": false,
+                        "departure": "2024-09-11T07:05:00",
+                        "arrival": "2024-09-11T09:40:00",
+                        "timeDeltaInDays": 0,
+                        "carriers": {
+                            "marketing": [
+                                {
+                                    "id": -32680,
+                                    "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/UX.png",
+                                    "name": "Air Europa"
+                                }
+                            ],
+                            "operationType": "fully_operated"
+                        },
+                        "segments": [
+                            {
+                                "id": "13870-9451-2409110705-2409110940--32680",
+                                "origin": {
+                                    "flightPlaceId": "MAD",
+                                    "displayCode": "MAD",
+                                    "parent": {
+                                        "flightPlaceId": "MADR",
+                                        "displayCode": "MAD",
+                                        "name": "Madrid",
+                                        "type": "City"
+                                    },
+                                    "name": "Madrid",
+                                    "type": "Airport",
+                                    "country": "Spain"
+                                },
+                                "destination": {
+                                    "flightPlaceId": "AMS",
+                                    "displayCode": "AMS",
+                                    "parent": {
+                                        "flightPlaceId": "AMST",
+                                        "displayCode": "AMS",
+                                        "name": "Amsterdam",
+                                        "type": "City"
+                                    },
+                                    "name": "Amsterdam Schiphol",
+                                    "type": "Airport",
+                                    "country": "Netherlands"
+                                },
+                                "departure": "2024-09-11T07:05:00",
+                                "arrival": "2024-09-11T09:40:00",
+                                "durationInMinutes": 155,
+                                "flightNumber": "1091",
+                                "marketingCarrier": {
+                                    "id": -32680,
+                                    "name": "Air Europa",
+                                    "alternateId": "UX",
+                                    "allianceId": 0,
+                                    "displayCode": ""
+                                },
+                                "operatingCarrier": {
+                                    "id": -32680,
+                                    "name": "Air Europa",
+                                    "alternateId": "UX",
+                                    "allianceId": 0,
+                                    "displayCode": ""
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "isSelfTransfer": false,
+                "isProtectedSelfTransfer": false,
+                "farePolicy": {
+                    "isChangeAllowed": false,
+                    "isPartiallyChangeable": false,
+                    "isCancellationAllowed": false,
+                    "isPartiallyRefundable": false
+                },
+                "fareAttributes": {},
+                "tags": [
+                    "cheapest",
+                    "shortest"
+                ],
+                "isMashUp": false,
+                "hasFlexibleOptions": false,
+                "score": 0.999
+            },
+            {
+                "id": "13870-2409111305--32221-0-9451-2409111545",
+                "price": {
+                    "raw": 160.26,
+                    "formatted": "$161",
+                    "pricingOptionId": "sEoDMphOstrJ"
+                },
+                "legs": [
+                    {
+                        "id": "13870-2409111305--32221-0-9451-2409111545",
+                        "origin": {
+                            "id": "MAD",
+                            "entityId": "95565077",
+                            "name": "Madrid",
+                            "displayCode": "MAD",
+                            "city": "Madrid",
+                            "country": "Spain",
+                            "isHighlighted": false
+                        },
+                        "destination": {
+                            "id": "AMS",
+                            "entityId": "95565044",
+                            "name": "Amsterdam Schiphol",
+                            "displayCode": "AMS",
+                            "city": "Amsterdam",
+                            "country": "Netherlands",
+                            "isHighlighted": false
+                        },
+                        "durationInMinutes": 160,
+                        "stopCount": 0,
+                        "isSmallestStops": false,
+                        "departure": "2024-09-11T13:05:00",
+                        "arrival": "2024-09-11T15:45:00",
+                        "timeDeltaInDays": 0,
+                        "carriers": {
+                            "marketing": [
+                                {
+                                    "id": -32221,
+                                    "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/I2.png",
+                                    "name": "Iberia Express"
+                                }
+                            ],
+                            "operationType": "fully_operated"
+                        },
+                        "segments": [
+                            {
+                                "id": "13870-9451-2409111305-2409111545--32221",
+                                "origin": {
+                                    "flightPlaceId": "MAD",
+                                    "displayCode": "MAD",
+                                    "parent": {
+                                        "flightPlaceId": "MADR",
+                                        "displayCode": "MAD",
+                                        "name": "Madrid",
+                                        "type": "City"
+                                    },
+                                    "name": "Madrid",
+                                    "type": "Airport",
+                                    "country": "Spain"
+                                },
+                                "destination": {
+                                    "flightPlaceId": "AMS",
+                                    "displayCode": "AMS",
+                                    "parent": {
+                                        "flightPlaceId": "AMST",
+                                        "displayCode": "AMS",
+                                        "name": "Amsterdam",
+                                        "type": "City"
+                                    },
+                                    "name": "Amsterdam Schiphol",
+                                    "type": "Airport",
+                                    "country": "Netherlands"
+                                },
+                                "departure": "2024-09-11T13:05:00",
+                                "arrival": "2024-09-11T15:45:00",
+                                "durationInMinutes": 160,
+                                "flightNumber": "3720",
+                                "marketingCarrier": {
+                                    "id": -32221,
+                                    "name": "Iberia Express",
+                                    "alternateId": "I2",
+                                    "allianceId": 0,
+                                    "displayCode": ""
+                                },
+                                "operatingCarrier": {
+                                    "id": -32221,
+                                    "name": "Iberia Express",
+                                    "alternateId": "I2",
+                                    "allianceId": 0,
+                                    "displayCode": ""
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "isSelfTransfer": false,
+                "isProtectedSelfTransfer": false,
+                "farePolicy": {
+                    "isChangeAllowed": false,
+                    "isPartiallyChangeable": false,
+                    "isCancellationAllowed": false,
+                    "isPartiallyRefundable": false
+                },
+                "fareAttributes": {},
+                "tags": [
+                    "third_cheapest",
+                    "third_shortest"
+                ],
+                "isMashUp": false,
+                "hasFlexibleOptions": false,
+                "score": 0.734511
+            },
+            {
+                "id": "13870-2409111305--32222-0-9451-2409111545",
+                "price": {
+                    "raw": 164.99,
+                    "formatted": "$165",
+                    "pricingOptionId": "_ycESmJFLY4i"
+                },
+                "legs": [
+                    {
+                        "id": "13870-2409111305--32222-0-9451-2409111545",
+                        "origin": {
+                            "id": "MAD",
+                            "entityId": "95565077",
+                            "name": "Madrid",
+                            "displayCode": "MAD",
+                            "city": "Madrid",
+                            "country": "Spain",
+                            "isHighlighted": false
+                        },
+                        "destination": {
+                            "id": "AMS",
+                            "entityId": "95565044",
+                            "name": "Amsterdam Schiphol",
+                            "displayCode": "AMS",
+                            "city": "Amsterdam",
+                            "country": "Netherlands",
+                            "isHighlighted": false
+                        },
+                        "durationInMinutes": 160,
+                        "stopCount": 0,
+                        "isSmallestStops": false,
+                        "departure": "2024-09-11T13:05:00",
+                        "arrival": "2024-09-11T15:45:00",
+                        "timeDeltaInDays": 0,
+                        "carriers": {
+                            "marketing": [
+                                {
+                                    "id": -32222,
+                                    "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/IB.png",
+                                    "name": "Iberia"
+                                }
+                            ],
+                            "operating": [
+                                {
+                                    "id": -32221,
+                                    "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/I2.png",
+                                    "name": "Iberia Express"
+                                }
+                            ],
+                            "operationType": "not_operated"
+                        },
+                        "segments": [
+                            {
+                                "id": "13870-9451-2409111305-2409111545--32222",
+                                "origin": {
+                                    "flightPlaceId": "MAD",
+                                    "displayCode": "MAD",
+                                    "parent": {
+                                        "flightPlaceId": "MADR",
+                                        "displayCode": "MAD",
+                                        "name": "Madrid",
+                                        "type": "City"
+                                    },
+                                    "name": "Madrid",
+                                    "type": "Airport",
+                                    "country": "Spain"
+                                },
+                                "destination": {
+                                    "flightPlaceId": "AMS",
+                                    "displayCode": "AMS",
+                                    "parent": {
+                                        "flightPlaceId": "AMST",
+                                        "displayCode": "AMS",
+                                        "name": "Amsterdam",
+                                        "type": "City"
+                                    },
+                                    "name": "Amsterdam Schiphol",
+                                    "type": "Airport",
+                                    "country": "Netherlands"
+                                },
+                                "departure": "2024-09-11T13:05:00",
+                                "arrival": "2024-09-11T15:45:00",
+                                "durationInMinutes": 160,
+                                "flightNumber": "3720",
+                                "marketingCarrier": {
+                                    "id": -32222,
+                                    "name": "Iberia",
+                                    "alternateId": "IB",
+                                    "allianceId": 0,
+                                    "displayCode": ""
+                                },
+                                "operatingCarrier": {
+                                    "id": -32221,
+                                    "name": "Iberia Express",
+                                    "alternateId": "I2",
+                                    "allianceId": 0,
+                                    "displayCode": ""
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "isSelfTransfer": false,
+                "isProtectedSelfTransfer": false,
+                "farePolicy": {
+                    "isChangeAllowed": false,
+                    "isPartiallyChangeable": false,
+                    "isCancellationAllowed": false,
+                    "isPartiallyRefundable": false
+                },
+                "fareAttributes": {},
+                "isMashUp": false,
+                "hasFlexibleOptions": false,
+                "score": 0.574086
+            },
+            {
+                "id": "13870-2409110840--32221-0-9451-2409111120",
+                "price": {
+                    "raw": 160.26,
+                    "formatted": "$161",
+                    "pricingOptionId": "TAJjVqwtcZxH"
+                },
+                "legs": [
+                    {
+                        "id": "13870-2409110840--32221-0-9451-2409111120",
+                        "origin": {
+                            "id": "MAD",
+                            "entityId": "95565077",
+                            "name": "Madrid",
+                            "displayCode": "MAD",
+                            "city": "Madrid",
+                            "country": "Spain",
+                            "isHighlighted": false
+                        },
+                        "destination": {
+                            "id": "AMS",
+                            "entityId": "95565044",
+                            "name": "Amsterdam Schiphol",
+                            "displayCode": "AMS",
+                            "city": "Amsterdam",
+                            "country": "Netherlands",
+                            "isHighlighted": false
+                        },
+                        "durationInMinutes": 160,
+                        "stopCount": 0,
+                        "isSmallestStops": false,
+                        "departure": "2024-09-11T08:40:00",
+                        "arrival": "2024-09-11T11:20:00",
+                        "timeDeltaInDays": 0,
+                        "carriers": {
+                            "marketing": [
+                                {
+                                    "id": -32221,
+                                    "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/I2.png",
+                                    "name": "Iberia Express"
+                                }
+                            ],
+                            "operationType": "fully_operated"
+                        },
+                        "segments": [
+                            {
+                                "id": "13870-9451-2409110840-2409111120--32221",
+                                "origin": {
+                                    "flightPlaceId": "MAD",
+                                    "displayCode": "MAD",
+                                    "parent": {
+                                        "flightPlaceId": "MADR",
+                                        "displayCode": "MAD",
+                                        "name": "Madrid",
+                                        "type": "City"
+                                    },
+                                    "name": "Madrid",
+                                    "type": "Airport",
+                                    "country": "Spain"
+                                },
+                                "destination": {
+                                    "flightPlaceId": "AMS",
+                                    "displayCode": "AMS",
+                                    "parent": {
+                                        "flightPlaceId": "AMST",
+                                        "displayCode": "AMS",
+                                        "name": "Amsterdam",
+                                        "type": "City"
+                                    },
+                                    "name": "Amsterdam Schiphol",
+                                    "type": "Airport",
+                                    "country": "Netherlands"
+                                },
+                                "departure": "2024-09-11T08:40:00",
+                                "arrival": "2024-09-11T11:20:00",
+                                "durationInMinutes": 160,
+                                "flightNumber": "3722",
+                                "marketingCarrier": {
+                                    "id": -32221,
+                                    "name": "Iberia Express",
+                                    "alternateId": "I2",
+                                    "allianceId": 0,
+                                    "displayCode": ""
+                                },
+                                "operatingCarrier": {
+                                    "id": -32221,
+                                    "name": "Iberia Express",
+                                    "alternateId": "I2",
+                                    "allianceId": 0,
+                                    "displayCode": ""
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "isSelfTransfer": false,
+                "isProtectedSelfTransfer": false,
+                "farePolicy": {
+                    "isChangeAllowed": false,
+                    "isPartiallyChangeable": false,
+                    "isCancellationAllowed": false,
+                    "isPartiallyRefundable": false
+                },
+                "fareAttributes": {},
+                "tags": [
+                    "third_cheapest",
+                    "third_shortest"
+                ],
+                "isMashUp": false,
+                "hasFlexibleOptions": false,
+                "score": 0.412478
+            },
+            {
+                "id": "13870-2409110840--32222-0-9451-2409111120",
+                "price": {
+                    "raw": 164.99,
+                    "formatted": "$165",
+                    "pricingOptionId": "tuKZJApRn9cv"
+                },
+                "legs": [
+                    {
+                        "id": "13870-2409110840--32222-0-9451-2409111120",
+                        "origin": {
+                            "id": "MAD",
+                            "entityId": "95565077",
+                            "name": "Madrid",
+                            "displayCode": "MAD",
+                            "city": "Madrid",
+                            "country": "Spain",
+                            "isHighlighted": false
+                        },
+                        "destination": {
+                            "id": "AMS",
+                            "entityId": "95565044",
+                            "name": "Amsterdam Schiphol",
+                            "displayCode": "AMS",
+                            "city": "Amsterdam",
+                            "country": "Netherlands",
+                            "isHighlighted": false
+                        },
+                        "durationInMinutes": 160,
+                        "stopCount": 0,
+                        "isSmallestStops": false,
+                        "departure": "2024-09-11T08:40:00",
+                        "arrival": "2024-09-11T11:20:00",
+                        "timeDeltaInDays": 0,
+                        "carriers": {
+                            "marketing": [
+                                {
+                                    "id": -32222,
+                                    "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/IB.png",
+                                    "name": "Iberia"
+                                }
+                            ],
+                            "operating": [
+                                {
+                                    "id": -32221,
+                                    "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/I2.png",
+                                    "name": "Iberia Express"
+                                }
+                            ],
+                            "operationType": "not_operated"
+                        },
+                        "segments": [
+                            {
+                                "id": "13870-9451-2409110840-2409111120--32222",
+                                "origin": {
+                                    "flightPlaceId": "MAD",
+                                    "displayCode": "MAD",
+                                    "parent": {
+                                        "flightPlaceId": "MADR",
+                                        "displayCode": "MAD",
+                                        "name": "Madrid",
+                                        "type": "City"
+                                    },
+                                    "name": "Madrid",
+                                    "type": "Airport",
+                                    "country": "Spain"
+                                },
+                                "destination": {
+                                    "flightPlaceId": "AMS",
+                                    "displayCode": "AMS",
+                                    "parent": {
+                                        "flightPlaceId": "AMST",
+                                        "displayCode": "AMS",
+                                        "name": "Amsterdam",
+                                        "type": "City"
+                                    },
+                                    "name": "Amsterdam Schiphol",
+                                    "type": "Airport",
+                                    "country": "Netherlands"
+                                },
+                                "departure": "2024-09-11T08:40:00",
+                                "arrival": "2024-09-11T11:20:00",
+                                "durationInMinutes": 160,
+                                "flightNumber": "3722",
+                                "marketingCarrier": {
+                                    "id": -32222,
+                                    "name": "Iberia",
+                                    "alternateId": "IB",
+                                    "allianceId": 0,
+                                    "displayCode": ""
+                                },
+                                "operatingCarrier": {
+                                    "id": -32221,
+                                    "name": "Iberia Express",
+                                    "alternateId": "I2",
+                                    "allianceId": 0,
+                                    "displayCode": ""
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "isSelfTransfer": false,
+                "isProtectedSelfTransfer": false,
+                "farePolicy": {
+                    "isChangeAllowed": false,
+                    "isPartiallyChangeable": false,
+                    "isCancellationAllowed": false,
+                    "isPartiallyRefundable": false
+                },
+                "fareAttributes": {},
+                "isMashUp": false,
+                "hasFlexibleOptions": false,
+                "score": 0.409647
+            },
+            {
+                "id": "13870-2409111550--32221-0-9451-2409111830",
+                "price": {
+                    "raw": 174.09,
+                    "formatted": "$175",
+                    "pricingOptionId": "RiJ7eoUM7o9W"
+                },
+                "legs": [
+                    {
+                        "id": "13870-2409111550--32221-0-9451-2409111830",
+                        "origin": {
+                            "id": "MAD",
+                            "entityId": "95565077",
+                            "name": "Madrid",
+                            "displayCode": "MAD",
+                            "city": "Madrid",
+                            "country": "Spain",
+                            "isHighlighted": false
+                        },
+                        "destination": {
+                            "id": "AMS",
+                            "entityId": "95565044",
+                            "name": "Amsterdam Schiphol",
+                            "displayCode": "AMS",
+                            "city": "Amsterdam",
+                            "country": "Netherlands",
+                            "isHighlighted": false
+                        },
+                        "durationInMinutes": 160,
+                        "stopCount": 0,
+                        "isSmallestStops": false,
+                        "departure": "2024-09-11T15:50:00",
+                        "arrival": "2024-09-11T18:30:00",
+                        "timeDeltaInDays": 0,
+                        "carriers": {
+                            "marketing": [
+                                {
+                                    "id": -32221,
+                                    "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/I2.png",
+                                    "name": "Iberia Express"
+                                }
+                            ],
+                            "operationType": "fully_operated"
+                        },
+                        "segments": [
+                            {
+                                "id": "13870-9451-2409111550-2409111830--32221",
+                                "origin": {
+                                    "flightPlaceId": "MAD",
+                                    "displayCode": "MAD",
+                                    "parent": {
+                                        "flightPlaceId": "MADR",
+                                        "displayCode": "MAD",
+                                        "name": "Madrid",
+                                        "type": "City"
+                                    },
+                                    "name": "Madrid",
+                                    "type": "Airport",
+                                    "country": "Spain"
+                                },
+                                "destination": {
+                                    "flightPlaceId": "AMS",
+                                    "displayCode": "AMS",
+                                    "parent": {
+                                        "flightPlaceId": "AMST",
+                                        "displayCode": "AMS",
+                                        "name": "Amsterdam",
+                                        "type": "City"
+                                    },
+                                    "name": "Amsterdam Schiphol",
+                                    "type": "Airport",
+                                    "country": "Netherlands"
+                                },
+                                "departure": "2024-09-11T15:50:00",
+                                "arrival": "2024-09-11T18:30:00",
+                                "durationInMinutes": 160,
+                                "flightNumber": "3724",
+                                "marketingCarrier": {
+                                    "id": -32221,
+                                    "name": "Iberia Express",
+                                    "alternateId": "I2",
+                                    "allianceId": 0,
+                                    "displayCode": ""
+                                },
+                                "operatingCarrier": {
+                                    "id": -32221,
+                                    "name": "Iberia Express",
+                                    "alternateId": "I2",
+                                    "allianceId": 0,
+                                    "displayCode": ""
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "isSelfTransfer": false,
+                "isProtectedSelfTransfer": false,
+                "farePolicy": {
+                    "isChangeAllowed": false,
+                    "isPartiallyChangeable": false,
+                    "isCancellationAllowed": false,
+                    "isPartiallyRefundable": false
+                },
+                "fareAttributes": {},
+                "isMashUp": false,
+                "hasFlexibleOptions": false,
+                "score": 0.386499
+            },
+            {
+                "id": "13870-2409111550--32222-0-9451-2409111830",
+                "price": {
+                    "raw": 179.99,
+                    "formatted": "$180",
+                    "pricingOptionId": "smm8lfJC413z"
+                },
+                "legs": [
+                    {
+                        "id": "13870-2409111550--32222-0-9451-2409111830",
+                        "origin": {
+                            "id": "MAD",
+                            "entityId": "95565077",
+                            "name": "Madrid",
+                            "displayCode": "MAD",
+                            "city": "Madrid",
+                            "country": "Spain",
+                            "isHighlighted": false
+                        },
+                        "destination": {
+                            "id": "AMS",
+                            "entityId": "95565044",
+                            "name": "Amsterdam Schiphol",
+                            "displayCode": "AMS",
+                            "city": "Amsterdam",
+                            "country": "Netherlands",
+                            "isHighlighted": false
+                        },
+                        "durationInMinutes": 160,
+                        "stopCount": 0,
+                        "isSmallestStops": false,
+                        "departure": "2024-09-11T15:50:00",
+                        "arrival": "2024-09-11T18:30:00",
+                        "timeDeltaInDays": 0,
+                        "carriers": {
+                            "marketing": [
+                                {
+                                    "id": -32222,
+                                    "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/IB.png",
+                                    "name": "Iberia"
+                                }
+                            ],
+                            "operating": [
+                                {
+                                    "id": -32221,
+                                    "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/I2.png",
+                                    "name": "Iberia Express"
+                                }
+                            ],
+                            "operationType": "not_operated"
+                        },
+                        "segments": [
+                            {
+                                "id": "13870-9451-2409111550-2409111830--32222",
+                                "origin": {
+                                    "flightPlaceId": "MAD",
+                                    "displayCode": "MAD",
+                                    "parent": {
+                                        "flightPlaceId": "MADR",
+                                        "displayCode": "MAD",
+                                        "name": "Madrid",
+                                        "type": "City"
+                                    },
+                                    "name": "Madrid",
+                                    "type": "Airport",
+                                    "country": "Spain"
+                                },
+                                "destination": {
+                                    "flightPlaceId": "AMS",
+                                    "displayCode": "AMS",
+                                    "parent": {
+                                        "flightPlaceId": "AMST",
+                                        "displayCode": "AMS",
+                                        "name": "Amsterdam",
+                                        "type": "City"
+                                    },
+                                    "name": "Amsterdam Schiphol",
+                                    "type": "Airport",
+                                    "country": "Netherlands"
+                                },
+                                "departure": "2024-09-11T15:50:00",
+                                "arrival": "2024-09-11T18:30:00",
+                                "durationInMinutes": 160,
+                                "flightNumber": "3724",
+                                "marketingCarrier": {
+                                    "id": -32222,
+                                    "name": "Iberia",
+                                    "alternateId": "IB",
+                                    "allianceId": 0,
+                                    "displayCode": ""
+                                },
+                                "operatingCarrier": {
+                                    "id": -32221,
+                                    "name": "Iberia Express",
+                                    "alternateId": "I2",
+                                    "allianceId": 0,
+                                    "displayCode": ""
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "isSelfTransfer": false,
+                "isProtectedSelfTransfer": false,
+                "farePolicy": {
+                    "isChangeAllowed": false,
+                    "isPartiallyChangeable": false,
+                    "isCancellationAllowed": false,
+                    "isPartiallyRefundable": false
+                },
+                "fareAttributes": {},
+                "isMashUp": false,
+                "hasFlexibleOptions": false,
+                "score": 0.382544
+            },
+            {
+                "id": "13870-2409111500--32680-0-9451-2409111735",
+                "price": {
+                    "raw": 202.2,
+                    "formatted": "$203",
+                    "pricingOptionId": "neKUoCjn_kbR"
+                },
+                "legs": [
+                    {
+                        "id": "13870-2409111500--32680-0-9451-2409111735",
+                        "origin": {
+                            "id": "MAD",
+                            "entityId": "95565077",
+                            "name": "Madrid",
+                            "displayCode": "MAD",
+                            "city": "Madrid",
+                            "country": "Spain",
+                            "isHighlighted": false
+                        },
+                        "destination": {
+                            "id": "AMS",
+                            "entityId": "95565044",
+                            "name": "Amsterdam Schiphol",
+                            "displayCode": "AMS",
+                            "city": "Amsterdam",
+                            "country": "Netherlands",
+                            "isHighlighted": false
+                        },
+                        "durationInMinutes": 155,
+                        "stopCount": 0,
+                        "isSmallestStops": false,
+                        "departure": "2024-09-11T15:00:00",
+                        "arrival": "2024-09-11T17:35:00",
+                        "timeDeltaInDays": 0,
+                        "carriers": {
+                            "marketing": [
+                                {
+                                    "id": -32680,
+                                    "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/UX.png",
+                                    "name": "Air Europa"
+                                }
+                            ],
+                            "operationType": "fully_operated"
+                        },
+                        "segments": [
+                            {
+                                "id": "13870-9451-2409111500-2409111735--32680",
+                                "origin": {
+                                    "flightPlaceId": "MAD",
+                                    "displayCode": "MAD",
+                                    "parent": {
+                                        "flightPlaceId": "MADR",
+                                        "displayCode": "MAD",
+                                        "name": "Madrid",
+                                        "type": "City"
+                                    },
+                                    "name": "Madrid",
+                                    "type": "Airport",
+                                    "country": "Spain"
+                                },
+                                "destination": {
+                                    "flightPlaceId": "AMS",
+                                    "displayCode": "AMS",
+                                    "parent": {
+                                        "flightPlaceId": "AMST",
+                                        "displayCode": "AMS",
+                                        "name": "Amsterdam",
+                                        "type": "City"
+                                    },
+                                    "name": "Amsterdam Schiphol",
+                                    "type": "Airport",
+                                    "country": "Netherlands"
+                                },
+                                "departure": "2024-09-11T15:00:00",
+                                "arrival": "2024-09-11T17:35:00",
+                                "durationInMinutes": 155,
+                                "flightNumber": "1093",
+                                "marketingCarrier": {
+                                    "id": -32680,
+                                    "name": "Air Europa",
+                                    "alternateId": "UX",
+                                    "allianceId": 0,
+                                    "displayCode": ""
+                                },
+                                "operatingCarrier": {
+                                    "id": -32680,
+                                    "name": "Air Europa",
+                                    "alternateId": "UX",
+                                    "allianceId": 0,
+                                    "displayCode": ""
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "isSelfTransfer": false,
+                "isProtectedSelfTransfer": false,
+                "farePolicy": {
+                    "isChangeAllowed": false,
+                    "isPartiallyChangeable": false,
+                    "isCancellationAllowed": false,
+                    "isPartiallyRefundable": false
+                },
+                "fareAttributes": {},
+                "tags": [
+                    "second_shortest"
+                ],
+                "isMashUp": false,
+                "hasFlexibleOptions": false,
+                "score": 0.353705
+            },
+            {
+                "id": "13870-2409111550--31685-0-9451-2409111830",
+                "price": {
+                    "raw": 218.38,
+                    "formatted": "$219",
+                    "pricingOptionId": "w-jbKClRoZvU"
+                },
+                "legs": [
+                    {
+                        "id": "13870-2409111550--31685-0-9451-2409111830",
+                        "origin": {
+                            "id": "MAD",
+                            "entityId": "95565077",
+                            "name": "Madrid",
+                            "displayCode": "MAD",
+                            "city": "Madrid",
+                            "country": "Spain",
+                            "isHighlighted": false
+                        },
+                        "destination": {
+                            "id": "AMS",
+                            "entityId": "95565044",
+                            "name": "Amsterdam Schiphol",
+                            "displayCode": "AMS",
+                            "city": "Amsterdam",
+                            "country": "Netherlands",
+                            "isHighlighted": false
+                        },
+                        "durationInMinutes": 160,
+                        "stopCount": 0,
+                        "isSmallestStops": false,
+                        "departure": "2024-09-11T15:50:00",
+                        "arrival": "2024-09-11T18:30:00",
+                        "timeDeltaInDays": 0,
+                        "carriers": {
+                            "marketing": [
+                                {
+                                    "id": -31685,
+                                    "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/07.png",
+                                    "name": "Vueling Airlines"
+                                }
+                            ],
+                            "operating": [
+                                {
+                                    "id": -32221,
+                                    "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/I2.png",
+                                    "name": "Iberia Express"
+                                }
+                            ],
+                            "operationType": "not_operated"
+                        },
+                        "segments": [
+                            {
+                                "id": "13870-9451-2409111550-2409111830--31685",
+                                "origin": {
+                                    "flightPlaceId": "MAD",
+                                    "displayCode": "MAD",
+                                    "parent": {
+                                        "flightPlaceId": "MADR",
+                                        "displayCode": "MAD",
+                                        "name": "Madrid",
+                                        "type": "City"
+                                    },
+                                    "name": "Madrid",
+                                    "type": "Airport",
+                                    "country": "Spain"
+                                },
+                                "destination": {
+                                    "flightPlaceId": "AMS",
+                                    "displayCode": "AMS",
+                                    "parent": {
+                                        "flightPlaceId": "AMST",
+                                        "displayCode": "AMS",
+                                        "name": "Amsterdam",
+                                        "type": "City"
+                                    },
+                                    "name": "Amsterdam Schiphol",
+                                    "type": "Airport",
+                                    "country": "Netherlands"
+                                },
+                                "departure": "2024-09-11T15:50:00",
+                                "arrival": "2024-09-11T18:30:00",
+                                "durationInMinutes": 160,
+                                "flightNumber": "5826",
+                                "marketingCarrier": {
+                                    "id": -31685,
+                                    "name": "Vueling Airlines",
+                                    "alternateId": "07",
+                                    "allianceId": 0,
+                                    "displayCode": ""
+                                },
+                                "operatingCarrier": {
+                                    "id": -32221,
+                                    "name": "Iberia Express",
+                                    "alternateId": "I2",
+                                    "allianceId": 0,
+                                    "displayCode": ""
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "isSelfTransfer": false,
+                "isProtectedSelfTransfer": false,
+                "farePolicy": {
+                    "isChangeAllowed": false,
+                    "isPartiallyChangeable": false,
+                    "isCancellationAllowed": false,
+                    "isPartiallyRefundable": false
+                },
+                "fareAttributes": {},
+                "isMashUp": false,
+                "hasFlexibleOptions": false,
+                "score": 0.328613
+            }
+        ],
+        "messages": [],
+        "filterStats": {
+            "duration": {
+                "min": 155,
+                "max": 295,
+                "multiCityMin": 155,
+                "multiCityMax": 295
+            },
+            "airports": [
+                {
+                    "city": "Amsterdam",
+                    "airports": [
+                        {
+                            "id": "AMS",
+                            "entityId": "95565044",
+                            "name": "Amsterdam Schiphol"
+                        }
+                    ]
+                },
+                {
+                    "city": "Madrid",
+                    "airports": [
+                        {
+                            "id": "MAD",
+                            "entityId": "95565077",
+                            "name": "Madrid"
+                        }
+                    ]
+                }
+            ],
+            "carriers": [
+                {
+                    "id": -32680,
+                    "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/UX.png",
+                    "name": "Air Europa"
+                },
+                {
+                    "id": -32222,
+                    "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/IB.png",
+                    "name": "Iberia"
+                },
+                {
+                    "id": -32221,
+                    "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/I2.png",
+                    "name": "Iberia Express"
+                },
+                {
+                    "id": -31685,
+                    "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/07.png",
+                    "name": "Vueling Airlines"
+                }
+            ],
+            "stopPrices": {
+                "direct": {
+                    "isPresent": true,
+                    "formattedPrice": "$87"
+                },
+                "one": {
+                    "isPresent": true,
+                    "formattedPrice": "$152"
+                },
+                "twoOrMore": {
+                    "isPresent": false
+                }
+            }
+        },
+        "flightsSessionId": "69006b6d-a4e5-4d1f-bcd7-92b48a2405d3",
+        "destinationImageUrl": "https://content.skyscnr.com/m/3719e8f4a5daf43d/original/Flights-Placeholder.jpg",
+        "token": "eyJhIjoxLCJjIjowLCJpIjowLCJjYyI6ImVjb25vbXkiLCJvIjoiTUFEIiwiZCI6IkFNUyIsImQxIjoiMjAyNC0wOS0xMSJ9"
+    },
+    "status": true,
+    "message": "Successful"
+}
