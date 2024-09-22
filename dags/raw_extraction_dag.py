@@ -118,7 +118,7 @@ def invoke_lambda_with_payload(**kwargs):
     lambda_operator.execute(kwargs)
 
 
-with DAG(dag_id='lambda_example_dag', default_args=default_args, schedule_interval=None, max_active_runs=1) as dag:
+with DAG(dag_id='raw_extraction_dag', default_args=default_args, schedule_interval=None, max_active_runs=1) as dag:
     
     payload = {"client_id": os.getenv('CLIENT_ID'), "client_secret": os.getenv('CLIENT_SECRET')}
     playload_bytes = json.dumps(payload).encode('utf-8')
