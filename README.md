@@ -1,7 +1,17 @@
-# data-engineering-project
+# Data Engineering Project
 Data engineering using cloud tools for turism data management
 
-### Pasos para Crear un Data Pipeline
+## Steps
+
+### Extract data from amadeus
+
+![alt text](image-1.png)
+
+### Transform Raw Data
+
+### Create Analytics tables
+
+## Pasos para Crear un Data Pipeline
 
 1. **Definición de Objetivos y Requerimientos**
     - **Objetivo**: Crear un pipeline de datos que recolecte y procese información sobre turismo, vuelos, alquileres de vehículos y alojamientos.
@@ -50,39 +60,6 @@ Data engineering using cloud tools for turism data management
         1. Conectar la herramienta de BI a PostgreSQL.
         2. Crear dashboards y visualizaciones basadas en las tablas maestras.
 
-### Ejemplo de Estructura de Tablas Maestras
-
-#### Tabla de Visitantes
-- `visitor_id`: Identificador único del visitante.
-- `visit_date`: Fecha de la visita.
-- `origin_country`: País de origen del visitante.
-- `destination_city`: Ciudad de destino.
-- `transport_mode`: Modo de transporte (avión, coche, etc.).
-
-#### Tabla de Vuelos
-- `flight_id`: Identificador único del vuelo.
-- `visitor_id`: Identificador único del visitante.
-- `flight_date`: Fecha del vuelo.
-- `origin_airport`: Aeropuerto de origen.
-- `destination_airport`: Aeropuerto de destino.
-- `airline`: Aerolínea.
-
-#### Tabla de Hoteles
-- `hotel_id`: Identificador único del hotel.
-- `visitor_id`: Identificador único del visitante.
-- `hotel_name`: Nombre del hotel.
-- `check_in_date`: Fecha de check-in.
-- `check_out_date`: Fecha de check-out.
-- `city`: Ciudad del hotel.
-
-#### Tabla de Alquileres de Vehículos
-- `rental_id`: Identificador único del alquiler.
-- `visitor_id`: Identificador único del visitante.
-- `rental_date`: Fecha del alquiler.
-- `return_date`: Fecha de devolución.
-- `pickup_location`: Lugar de recogida.
-- `dropoff_location`: Lugar de devolución.
-- `car_type`: Tipo de coche.
 
 ### Resumen del Pipeline
 
@@ -95,3 +72,6 @@ Data engineering using cloud tools for turism data management
 7. **Visualización**: Herramientas de BI conectadas a PostgreSQL para crear dashboards.
 
 Este enfoque te permitirá construir un pipeline de datos eficiente y escalable, utilizando herramientas modernas y accesibles.
+
+
+
