@@ -3,7 +3,7 @@ Data engineering using cloud tools for turism data management
 
 ## Steps
 
-### Extract data from amadeus
+### Extract data from amadeus and Skyscanner
 
 ![alt text](image-1.png)
 
