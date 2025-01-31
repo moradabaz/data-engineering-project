@@ -1,4 +1,10 @@
 {
+    "ori": "MAD",
+    "dest":   "BCN",
+    "month": "",
+    "week":  "4",
+    "day": "12",
+    "year": "23",
     "data": {
         "context": {
             "status": "incomplete",

@@ -32,8 +32,9 @@ extracted_df = df.selectExpr("explode(data) as flight_offer").selectExpr(
     "flight_offer.price.currency as currency"
 )
 
-output_path = "s3://my-bucket/transformed/"  # Cambia este bucket por tu bucket en S3
-extracted_df.write.format("parquet").mode("overwrite").save(output_path)
+
+output_path = "s3://my-bucket/transformed/amadeus"  # Cambia este bucket por tu bucket en S3
+extracted_df.write.format("parquet").mode("overwrite").partitionBy("ori", "dest", "year", "month", "week", "day").save(output_path)
 
 job.commit()
 
