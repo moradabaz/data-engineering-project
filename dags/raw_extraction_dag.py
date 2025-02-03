@@ -5,6 +5,7 @@ from airflow.operators.python import PythonOperator
 from airflow.providers.amazon.aws.hooks.s3 import S3Hook
 from datetime import datetime, timedelta
 from dotenv import find_dotenv, load_dotenv, set_key
+from airflow.models import Variable
 import os
 import json
 
@@ -42,12 +43,14 @@ def calculate_partition_date(execution_date):
 
 def save_token_to_env(**kwargs):
     task_instance = kwargs['ti']
-    response  = task_instance.xcom_pull(task_ids='generate_token_task')
+    response  = task_instance.xcom_pull(task_ids='generate_amadeus_token')
+    print(response)
     response = json.loads(response)
     token = response['token'].strip('"')
     print(f'token received: {token}')
     
     try:
+        Variable.set("API_TOKEN", token)
         set_key(dotenv_path=find_dotenv(), key_to_set='API_TOKEN', value_to_set=token)
     except Exception as e:
         print(f'Error al guardar el token en el entorno: {e}')
@@ -60,9 +63,11 @@ def create_payload(**kwargs):
     execution_date = kwargs['execution_date']
     year, week = calculate_partition_date(execution_date=execution_date)
     start_of_week, end_of_week = calculate_week_dates(execution_date)
-    
+    #api_token = os.environ['API_TOKEN']
+    api_token = Variable.get('API_TOKEN')
+
     payload = {
-        "token": os.environ['API_TOKEN'],
+        "token": api_token,
         "start_of_week": start_of_week,
         "end_of_week": end_of_week,
         "week": week,
@@ -78,10 +83,11 @@ def create_addition_info_payload(**kwargs):
     year, week = calculate_partition_date(execution_date=execution_date)
     start_of_week, end_of_week = calculate_week_dates(execution_date)
     task_instance = kwargs['ti']
-    response  = task_instance.xcom_pull(task_ids='invoke_lambda_with_payload')
+    response  = task_instance.xcom_pull(task_ids='invoke_flights_suggestions_task')
     response = json.loads(response)
     response = json.loads(response['body'])
-    print(response['message'])
+
+    print(response)
 
     data = response['data']
     
@@ -123,8 +129,8 @@ with DAG(dag_id='raw_extraction_dag', default_args=default_args, schedule_interv
     payload = {"client_id": os.getenv('CLIENT_ID'), "client_secret": os.getenv('CLIENT_SECRET')}
     playload_bytes = json.dumps(payload).encode('utf-8')
     
-    generate_token_task = LambdaInvokeFunctionOperator(
-        task_id='generate_token_task',
+    generate_amadeus_token = LambdaInvokeFunctionOperator(
+        task_id='generate_amadeus_token',
         function_name='generate-token-function',
         log_type='Tail',
         payload=playload_bytes,
@@ -132,42 +138,42 @@ with DAG(dag_id='raw_extraction_dag', default_args=default_args, schedule_interv
         region_name='eu-south-2'
     )
 
-    save_token_task = PythonOperator(
-        task_id='save_token_task',
+    save_amadeus_token = PythonOperator(
+        task_id='save_amadeus_token',
         python_callable=save_token_to_env,
         provide_context=True,
         dag=dag
     )
 
     build_payload_task = PythonOperator(
-    task_id='build_payload',
+    task_id='build_payload_task',
     python_callable=create_payload,
     dag=dag,
 )
     
     invoke_flights_suggestions_task = LambdaInvokeFunctionOperator(
-        task_id='invoke_lambda_with_payload',
+        task_id='invoke_flights_suggestions_task',
         function_name='my-first-lambda',
-        payload="{{ task_instance.xcom_pull(task_ids='build_payload') }}",  # Usar XCom para obtener el payload
+        payload="{{ task_instance.xcom_pull(task_ids='build_payload_task') }}",  # Usar XCom para obtener el payload
         aws_conn_id='aws_default',
         region_name='eu-south-2',
         dag=dag
 )
 
     build_additional_info_payload_task = PythonOperator(
-    task_id='create_addition_info_payload',
-    python_callable=create_addition_info_payload,
-    dag=dag,
-)
+        task_id='build_additional_info_payload_task',
+        python_callable=create_addition_info_payload,
+        dag=dag,
+    )
     
     fetch_additional_info_task = LambdaInvokeFunctionOperator(
-        task_id='fetch_amadeus_info_task',
+        task_id='fetch_additional_info_task',
         function_name='raw-add-amadeus-info',
-        payload="{{ task_instance.xcom_pull(task_ids='create_addition_info_payload') }}",  # Usar XCom para obtener el payload
+        payload="{{ task_instance.xcom_pull(task_ids='build_additional_info_payload_task') }}",  # Usar XCom para obtener el payload
         aws_conn_id='aws_default',
         region_name='eu-south-2',
         dag=dag
 )
     
 
-    generate_token_task >> save_token_task >> build_payload_task >> invoke_flights_suggestions_task >> build_additional_info_payload_task >> fetch_additional_info_task
+    generate_amadeus_token >> save_amadeus_token >> build_payload_task >> invoke_flights_suggestions_task >> build_additional_info_payload_task >> fetch_additional_info_task
