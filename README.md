@@ -1,6 +1,11 @@
 # Data Engineering Project
 Data engineering using cloud tools for turism data management
 
+## General Architecture (To be done)
+
+![image](https://github.com/user-attachments/assets/067bf94b-b603-4625-9106-c126a90b6142)
+
+
 ## Steps
 
 ### Extract data from amadeus and Skyscanner
