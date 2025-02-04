@@ -55,91 +55,95 @@ with DAG(
 ) as dag:
     
     start = DummyOperator(task_id="start")
-
-    @task_group(group_id = 'amadeus_data_extraction')
-    def amadeus_data_extraction():
-        
-        detect_new_amadeus_json = S3KeySensor(
-            task_id="detect_new_amadeus_json",
-            bucket_name=S3_BUCKET,
-            bucket_key=f"{S3_PREFIX_AMADEUS}*.json",
-            wildcard_match=True,
-            aws_conn_id="aws_default",
-            timeout=600,
-            poke_interval=60,
-            dag=dag
-        )
-
-        amadeus_glue_raw_crawler = GlueCrawlerOperator(
-            task_id="amadeus_glue_raw_crawler",
-            aws_conn_id="aws_default",
-            config={"Name": amadeus_raw_crawler},
-            region_name="eu-south-2",  # Cambia a tu región
-            dag=dag,
-        )
-
-        amadeus_glue_job = GlueJobOperator(
-            task_id="amadeus_glue_job",
-            job_name=GLUE_JOB_AMADEUS,
-            iam_role_name='AWSGlueServiceRole-amadeus',
-            create_job_kwargs={'GlueVersion': '4.0'},
-            aws_conn_id="aws_default",
-            region_name="eu-south-2",
-            execution_timeout=timedelta(minutes=60),
-            dag=dag
-        )
-
-        amadeus_glue_transformed_crawler = GlueCrawlerOperator(
-            task_id="run_glue_transformed_crawler",
-            config={"Name": amadeus_trans_crawler},
-            aws_conn_id="aws_default",
-            region_name="eu-south-2",  # Cambia a tu región
-            dag=dag,
-        )
-
-        amadeus_glue_raw_crawler >> amadeus_glue_job >> amadeus_glue_transformed_crawler
     
-    @task_group(group_id = 'skyscanner_data_extraction')
-    def skyscanner_data_extraction():
+    @task_group(group_id='extract_flights_delay_prediction')
+    def extract_flights_delay_prediction():
+        pass
+           
+    # @task_group(group_id = 'amadeus_data_extraction')
+    # def amadeus_data_extraction():
         
-        detect_new_skyscanner_json = S3KeySensor(
-            task_id="detect_new_skyscanner_json",
-            bucket_name=S3_BUCKET,
-            bucket_key=f"{S3_PREFIX_SKYSCANNER}*.json",
-            wildcard_match=True,
-            aws_conn_id="aws_default",
-            timeout=600,
-            poke_interval=60,
-            dag=dag
-        )
+    #     detect_new_amadeus_json = S3KeySensor(
+    #         task_id="detect_new_amadeus_json",
+    #         bucket_name=S3_BUCKET,
+    #         bucket_key=f"{S3_PREFIX_AMADEUS}*.json",
+    #         wildcard_match=True,
+    #         aws_conn_id="aws_default",
+    #         timeout=600,
+    #         poke_interval=60,
+    #         dag=dag
+    #     )
 
-        skyscanner_glue_raw_crawler = GlueCrawlerOperator(
-            task_id="skyscanner_glue_raw_crawler",
-            config={"Name": skyscanner_raw_crawler},
-            aws_conn_id="aws_default",
-            region_name="eu-south-2",  # Cambia a tu región
-            dag=dag,
-        )
+    #     amadeus_glue_raw_crawler = GlueCrawlerOperator(
+    #         task_id="amadeus_glue_raw_crawler",
+    #         aws_conn_id="aws_default",
+    #         config={"Name": amadeus_raw_crawler},
+    #         region_name="eu-south-2",  # Cambia a tu región
+    #         dag=dag,
+    #     )
 
-        skyscanner_glue_job = GlueJobOperator(
-            task_id="skyscanner_glue_job",
-            job_name=GLUE_JOB_SKYSCANNER,
-            iam_role_name='AWSGlueServiceRole-amadeus',
-            create_job_kwargs={'GlueVersion': '3.0'},
-            aws_conn_id="aws_default",
-            region_name="eu-south-2",
-            execution_timeout=timedelta(minutes=60),
-            dag=dag
-        )
+    #     amadeus_glue_job = GlueJobOperator(
+    #         task_id="amadeus_glue_job",
+    #         job_name=GLUE_JOB_AMADEUS,
+    #         iam_role_name='AWSGlueServiceRole-amadeus',
+    #         create_job_kwargs={'GlueVersion': '4.0'},
+    #         aws_conn_id="aws_default",
+    #         region_name="eu-south-2",
+    #         execution_timeout=timedelta(minutes=60),
+    #         dag=dag
+    #     )
 
-        skyscanner_glue_transformed_crawler = GlueCrawlerOperator(
-            task_id="skyscanner_glue_transformed_crawler",
-            config={"Name": skyscanner_trans_crawler},
-            aws_conn_id="aws_default",
-            region_name="eu-south-2",  # Cambia a tu región
-            dag=dag,
-        )
+    #     amadeus_glue_transformed_crawler = GlueCrawlerOperator(
+    #         task_id="run_glue_transformed_crawler",
+    #         config={"Name": amadeus_trans_crawler},
+    #         aws_conn_id="aws_default",
+    #         region_name="eu-south-2",  # Cambia a tu región
+    #         dag=dag,
+    #     )
 
-        skyscanner_glue_raw_crawler >> skyscanner_glue_job >> skyscanner_glue_transformed_crawler
+    #     amadeus_glue_raw_crawler >> amadeus_glue_job >> amadeus_glue_transformed_crawler
+    
+    # @task_group(group_id = 'skyscanner_data_extraction')
+    # def skyscanner_data_extraction():
+        
+    #     detect_new_skyscanner_json = S3KeySensor(
+    #         task_id="detect_new_skyscanner_json",
+    #         bucket_name=S3_BUCKET,
+    #         bucket_key=f"{S3_PREFIX_SKYSCANNER}*.json",
+    #         wildcard_match=True,
+    #         aws_conn_id="aws_default",
+    #         timeout=600,
+    #         poke_interval=60,
+    #         dag=dag
+    #     )
 
-    start >> [amadeus_data_extraction(), skyscanner_data_extraction()]
+    #     skyscanner_glue_raw_crawler = GlueCrawlerOperator(
+    #         task_id="skyscanner_glue_raw_crawler",
+    #         config={"Name": skyscanner_raw_crawler},
+    #         aws_conn_id="aws_default",
+    #         region_name="eu-south-2",  # Cambia a tu región
+    #         dag=dag,
+    #     )
+
+    #     skyscanner_glue_job = GlueJobOperator(
+    #         task_id="skyscanner_glue_job",
+    #         job_name=GLUE_JOB_SKYSCANNER,
+    #         iam_role_name='AWSGlueServiceRole-amadeus',
+    #         create_job_kwargs={'GlueVersion': '3.0'},
+    #         aws_conn_id="aws_default",
+    #         region_name="eu-south-2",
+    #         execution_timeout=timedelta(minutes=60),
+    #         dag=dag
+    #     )
+
+    #     skyscanner_glue_transformed_crawler = GlueCrawlerOperator(
+    #         task_id="skyscanner_glue_transformed_crawler",
+    #         config={"Name": skyscanner_trans_crawler},
+    #         aws_conn_id="aws_default",
+    #         region_name="eu-south-2",  # Cambia a tu región
+    #         dag=dag,
+    #     )
+
+    #     skyscanner_glue_raw_crawler >> skyscanner_glue_job >> skyscanner_glue_transformed_crawler
+
+    # start >> [amadeus_data_extraction(), skyscanner_data_extraction()]
