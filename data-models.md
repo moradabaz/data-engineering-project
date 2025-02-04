@@ -90,6 +90,7 @@ id = MAD-AMS-20240403-1
         - name
     - carrier
         - name
+
 #### Data
 
 - price -> [ ]
@@ -97,7 +98,7 @@ id = MAD-AMS-20240403-1
     - formatted
 - legs -> [ ]
     - origin -> [ ]
-        - id (MAD)
+        - id (MAD) => legs[0]["origin"]
         - name (Madrid)
         - displayCode (MAD)
         - city
