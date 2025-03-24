@@ -192,6 +192,7 @@ with DAG(
             dag=dag,
         )
 
+
         amadeus_glue_raw_crawler >> amadeus_glue_job >> amadeus_glue_transformed_crawler
     
     @task_group(group_id = 'skyscanner_data_extraction')
